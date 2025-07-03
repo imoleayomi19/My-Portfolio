@@ -15,7 +15,7 @@ export default function Page() {
           <h1>
             <i>My</i>
           </h1>
-          <img
+          <Image 
             src="/portfolio-logo-com.svg"
             alt="Portfolio Icon"
             className="portfolio-icon"
@@ -58,7 +58,7 @@ export default function Page() {
               </i>
             </div>
             <div className="home-image">
-              <img src="/imole.jpeg" alt="Emmanuel Imole" />
+              <Image src="/imole.jpeg" alt="Emmanuel Imole" />
             </div>
           </div>
           <div>
