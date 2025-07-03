@@ -48,10 +48,10 @@ export default function Page() {
         <div className="home-row">
           <div className="content">
             <div className="home-text">
-              <h2>Hi, I'm Emmanuel Imole</h2>
+              <h2>Hi, I&apos;m Emmanuel Imole</h2>
               <p>Frontend Web Developer</p>
               <i>
-                I'm a front-end web developer skilled in bringing to life
+                I&apos;m a front-end web developer skilled in bringing to life
                 responsive web designs that shine across devices. I specialize
                 in HTML, CSS, JavaScript, React Next.js and TypeScript crafting
                 websites that are not only visually appealing but also
