@@ -50,15 +50,16 @@
     justify-content: center;
     height: 300px;
     width: 250px;
-    /* margin-left: 40px; */
+    margin-left: 40px;
+    border-radius: 50px;
 }
   }
 
-  .home-image img {
+  /* .home-image img {
     width: 100%;
     height: auto;
     border-radius: 16px;
-  }
+  } */
 
 .home-btn {
     padding: 12px 32px;
