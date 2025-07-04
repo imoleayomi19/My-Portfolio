@@ -11,9 +11,7 @@
   .header-logo {
     margin-top: 0 !important;
     margin-left: 0 !important;
-    width: 100%;
-    gap: 10px;
-    padding: 10px 0;
+    /* width: 100%; */
   }
 
   .portfolio-icon {
@@ -30,12 +28,9 @@
   }
 
   nav {
-    width: 100%;
-    margin-top: 10px;
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     gap: 8px;
-    justify-content: flex-start;
   }
 
   .home-row,
@@ -62,15 +57,21 @@
     border-radius: 16px;
   }
 
-  .home-btn {
-    width: 200px;
+.home-btn {
+    padding: 12px 32px;
+    background: linear-gradient(90deg, #6a11cb 0%, #2575fc 100%);
+    color: #fff;
+    border: none;
+    border-radius: 30px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 4px 16px rgba(31, 38, 135, 0.15);
+    transition: background 0.3s, transform 0.2s;
+    margin-top: 15px;
+    width: 100%;
     margin-left: 100px;
-    min-width: 0;
-    margin-top: 20px;
-    align-self: center;
-    font-size: 1rem;
-    padding: 12px 0;
-  }
+}
 
   .home-text {
     padding: 18px 10px;
