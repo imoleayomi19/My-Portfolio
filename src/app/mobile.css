@@ -45,10 +45,13 @@
   }
 
   .home-image {
-    width: 90vw;
-    max-width: 320px;
-    height: auto;
-    margin-left: 0 !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 300px;
+    width: 250px;
+    /* margin-left: 40px; */
+}
   }
 
   .home-image img {
@@ -69,7 +72,6 @@
     box-shadow: 0 4px 16px rgba(31, 38, 135, 0.15);
     transition: background 0.3s, transform 0.2s;
     margin-top: 15px;
-    width: 100%;
     margin-left: 100px;
 }
 
@@ -90,4 +92,3 @@
     width: 100%;
     gap: 16px;
   }
-}
