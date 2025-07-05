@@ -30,16 +30,16 @@ export default function Page() {
           />
         </div>
         <nav>
-          <Link className="nav" href={""}>
+          <Link className="nav-link" href={""}>
             Home
           </Link>
-          <Link className="nav" href={""}>
+          <Link className="nav-link" href={""}>
             About
           </Link>
-          <Link className="nav" href={""}>
+          <Link className="nnav-link" href={""}>
             Skills
           </Link>
-          <Link className="nav" href={""}>
+          <Link className="nav-link" href={""}>
             Project
           </Link>
         </nav>
