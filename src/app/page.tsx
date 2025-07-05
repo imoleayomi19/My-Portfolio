@@ -74,7 +74,7 @@ export default function Page() {
             </div>
             <div className="home-image">
               <Image
-                src="/imole.jpeg"
+                src="/imole.png.jpeg"
                 alt="Emmanuel Imole"
                 width={350}
                 height={400}
