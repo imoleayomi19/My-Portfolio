@@ -101,8 +101,8 @@ export default function Page() {
                   <img
                     src="/icons8-x (1).svg"
                     alt="Twitter"
-                    width={25}
-                    height={25}
+                    width={28}
+                    height={28}
                   />
                 </a>
                 <a
@@ -115,8 +115,8 @@ export default function Page() {
                   <img
                     src="/icons8-linkedin.svg"
                     alt="LinkedIn"
-                    width={25}
-                    height={25}
+                    width={28}
+                    height={28}
                   />
                 </a>
                 <a
@@ -129,8 +129,8 @@ export default function Page() {
                   <img
                     src="/icons8-github.svg"
                     alt="GitHub"
-                    width={25}
-                    height={25}
+                    width={28}
+                    height={28}
                   />
                 </a>
                 <a
@@ -143,8 +143,8 @@ export default function Page() {
                   <img
                     src="/icons8-gmail.svg"
                     alt="Email"
-                    width={25}
-                    height={25}
+                    width={28}
+                    height={28}
                   />
                 </a>
               </div>
