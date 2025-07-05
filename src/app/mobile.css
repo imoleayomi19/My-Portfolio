@@ -80,6 +80,18 @@
     gap: 16px;
   }
   nav {
+    display: flex;
+    flex-direction: column;
+    /* color: #fff; */
+    /* text-decoration: none; */
+    /* font-weight: 700; */
+    /* transition: color 0.2s, background 0.2s, padding 0.2s, border-radius 0.2s; */
+    /* font-size: 1.2rem; */
+    /* border-radius: 8px; */
+    /* position: relative; */
+  }
+
+  .nav {
     font-family: 'Inter', sans-serif;
     list-style: none;
     color: #fff;
@@ -87,13 +99,13 @@
     font-weight: 700;
     transition: color 0.2s, background 0.2s, padding 0.2s, border-radius 0.2s;
     font-size: 1.2rem;
-    /* padding: 8px 18px; */
+    padding: 0 5px;
     border-radius: 8px;
-    /* margin-top: 20px; */
+    margin-top: 10px;
     display: inline-block;
     position: relative;
-  }
-  
+}
+
   .nav:hover,
   .nav:focus {
     background: linear-gradient(90deg, #2575fc 0%, #6a11cb 100%);
