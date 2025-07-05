@@ -36,7 +36,7 @@ export default function Page() {
           <Link className="nav-link" href={""}>
             About
           </Link>
-          <Link className="nnav-link" href={""}>
+          <Link className="nav-link" href={""}>
             Skills
           </Link>
           <Link className="nav-link" href={""}>

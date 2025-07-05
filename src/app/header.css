@@ -82,7 +82,7 @@ header{
   }
 }
 
-.nav {
+.nav-link {
   font-family: 'Inter', sans-serif;
   list-style: none;
   color: #fff;
@@ -97,8 +97,8 @@ header{
   position: relative;
 }
 
-.nav:hover,
-.nav:focus {
+.nav-link:hover,
+.nav-link:focus {
   color: #fff;
   background: linear-gradient(90deg, #2575fc 0%, #6a11cb 100%);
   text-decoration: none;
@@ -106,7 +106,7 @@ header{
   outline: none;
 }
 
-.nav::after {
+.nav-link::after {
   content: "";
   display: block;
   width: 0;
@@ -118,7 +118,7 @@ header{
   bottom: 0;
 }
 
-.nav:hover::after,
-.nav:focus::after {
+.nav-link:hover::after,
+.nav-link:focus::after {
   width: 100%;
 }
