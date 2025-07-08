@@ -76,8 +76,8 @@ export default function Page() {
               <Image
                 src="/imole.png.jpeg"
                 alt="Emmanuel Imole"
-                width={0}
-                height={50}
+                width={350}
+                height={0}
                 style={{ objectFit: "cover" }}
               />
             </div>
