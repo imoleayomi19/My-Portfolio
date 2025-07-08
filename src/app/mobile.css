@@ -70,10 +70,8 @@
     text-decoration: none;
     font-weight: 700;
     transition: color 0.2s, background 0.2s, padding 0.2s, border-radius 0.2s;
-    
-    padding: 0;
-    border-radius: 0px;
-    margin-top: 0px;
+    padding: 2px;
+    margin-top: 20px;
     border-radius: 8px;
     display: inline-block;
     position: relative;
@@ -102,7 +100,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 300px;
+  height: 350px;
   margin-top: 40px;
  
 }
