@@ -83,7 +83,7 @@ export default function Page() {
               />
             </div>
           </div>
-          <div>
+          <div className="homeBtn">
             <button
               className="home-btn"
               onClick={() => setShowSocials((prev) => !prev)}
