@@ -115,13 +115,13 @@
   width: 800px;
 }
 
-.social-links {
+/* .social-links {
   margin-top: 5px;
   display: flex;
   gap: 10px;
   margin-left: 600px;
   cursor: pointer;
-}
+} */
 
 .social-btn:hover {
   background: linear-gradient(90deg, #554961 0%, #a0b5d8 100%);
