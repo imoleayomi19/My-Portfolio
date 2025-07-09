@@ -25,7 +25,7 @@
   padding: 32px;
 }
 
-.content:hover {
+/* .content:hover {
   box-shadow:
   0 12px 48px 0 rgba(31, 38, 135, 0.25),
   0 24px 64px 0 rgba(0,0,0,0.25),
@@ -35,7 +35,7 @@
   transition: transform 0.2s;
   z-index: 2;
   cursor: pointer;
-}
+} */
 
 .home-list-container {
   margin-left: 20px;
