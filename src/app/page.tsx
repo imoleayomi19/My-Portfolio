@@ -72,14 +72,14 @@ export default function Page() {
                 </ul>
               </div>
             </div>
-            <div >
+            <div className=" container">
               <Image
                 src="/imole.png.jpeg"
                 alt="Emmanuel Imole"
                 className="home-image"
-                width={50}
-                height={60}
-                style={{ objectFit: "cover" }}
+                width={250}
+                height={315}
+                style={{ objectFit: "cover", borderStartEndRadius: "50px", borderEndStartRadius: "50px", }}
               />
             </div>
           </div>

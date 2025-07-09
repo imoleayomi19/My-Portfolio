@@ -2,10 +2,12 @@
    /* body{
     background-color: red;
   } */
+   
 
 }
 
 @media (max-width: 768px) {
+  
   
    /* body{
     background-color: #000;
@@ -33,15 +35,6 @@
   margin-top: 20px;
   }
 
-  .home-image {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  /* height: 250px; 
-  width: 200px; */
-  margin-left: 40px;
-}
-
 }
 
 @media (max-width: 390px) {
@@ -67,6 +60,7 @@
   }
 
 .nav-link {
+    background-color: bisque;
     font-family: 'Inter', sans-serif;
     list-style: none;
     color: #fff;
