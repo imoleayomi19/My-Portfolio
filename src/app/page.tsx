@@ -79,7 +79,7 @@ export default function Page() {
                 className="home-image"
                 width={250}
                 height={315}
-                style={{ objectFit: "cover", borderStartEndRadius: "50px", borderEndStartRadius: "50px", justifyContent: "center",display : "flex", alignItems: "center" }}
+                style={{ objectFit: "cover", borderStartEndRadius: "50px", borderEndStartRadius: "50px",}}
               />
             </div>
           </div>
