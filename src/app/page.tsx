@@ -78,8 +78,8 @@ export default function Page() {
                 alt="Emmanuel Imole"
                 className="home-image"
                 width={250}
-                height={315}
-                style={{ objectFit: "cover", borderStartEndRadius: "50px", borderEndStartRadius: "50px",}}
+                height={325}
+                style={{ objectFit: "cover", borderStartEndRadius: "50px", borderEndStartRadius: "50px", }}
               />
             </div>
           </div>

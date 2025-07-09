@@ -58,7 +58,8 @@
 
 .home-text {
   background: rgba(0,0,0,0.25);
-  border-radius: 16px;
+  border-top-left-radius: 16px;
+  border-bottom-left-radius: 16px;
   padding: 32px 28px;
   box-shadow: 0 4px 24px 0 rgba(31, 38, 135, 0.18);
   color: #fff;
