@@ -27,11 +27,11 @@
 
 .content:hover {
   box-shadow:
-  0 12px 48px 0 rgba(31, 38, 135, 0.55),
-  0 24px 64px 0 rgba(0,0,0,0.35),
-  0 3px 20px 0 rgba(0,0,0,0.25);
+  0 12px 48px 0 rgba(31, 38, 135, 0.25),
+  0 24px 64px 0 rgba(0,0,0,0.25),
+  0 3px 20px 0 rgba(0,0,0,0.15);
   background: rgba(0,0,0,0.35);
-  transform: translateY(10px) scale(1.03);
+  transform: translateY(4px) scale(1.0);
   transition: transform 0.2s;
   z-index: 2;
   cursor: pointer;
