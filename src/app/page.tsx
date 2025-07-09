@@ -72,12 +72,13 @@ export default function Page() {
                 </ul>
               </div>
             </div>
-            <div className="home-image">
+            <div >
               <Image
                 src="/imole.png.jpeg"
                 alt="Emmanuel Imole"
-                width={350}
-                height={400}
+                className="home-image"
+                width={50}
+                height={60}
                 style={{ objectFit: "cover" }}
               />
             </div>
