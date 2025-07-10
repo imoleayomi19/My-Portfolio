@@ -8,13 +8,13 @@ export default function Page() {
   const [showSocials, setShowSocials] = useState(false);
   return (
     <div>
-      <header className="header" style={{ background: "white" }}>
-        <nav className="nav-head" >
+      <header className="header">
+        <nav className="nav-head">
           <div
             style={{
               display: "flex",
-              alignItems: "center",
-              marginLeft: "40px",
+              // alignItems: "center",
+              // marginLeft: "40px",
             }}
             className="header-logo"
           >
@@ -29,10 +29,19 @@ export default function Page() {
               height={50}
             />
           </div>
-          <div style={
-            { position: "absolute", background: "white", minHeight: "30vh", right: "0", top: "30px", width: "30%", display: "flex", justifyContent: "center",}
-          }>
-            <ul className="nav-list"  >
+          <div
+            style={{
+              // position: "absolute",
+              // right: "0",
+              // top: "30px",
+              // display: "flex",
+              // justifyContent: "center",
+              // background: "#333",
+              // padding: "10px 20px",
+            }}
+            className=" nav-links"
+          >
+            <ul className="nav-list">
               <Link className="nav-link" href={""}>
                 Home
               </Link>

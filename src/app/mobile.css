@@ -19,6 +19,9 @@
     flex-direction: column;
   }
 
+  .nav-links{
+    min-height: "30vh",
+  }
 }
 
 @media (max-width: 576px) {
@@ -38,8 +41,12 @@
   .nav-link {
   padding: 8px 18px;
   border-radius: 8px;
-  margin-top: 20px;
+  /* margin-top: 30px; */
   } 
+
+  .nav-list{
+    list-style: none;
+}
 
   .home-btn {
   /* padding: 12px 32px;
@@ -57,7 +64,7 @@
   /* display: flex; */
 } 
 
-.content:hover {
+ .content:hover {
   box-shadow:
   0 12px 48px 0 rgba(31, 38, 135, 0.25),
   0 24px 64px 0 rgba(0,0,0,0.25),
@@ -129,7 +136,6 @@
 
 
 .social-links {
-  margin-top: 20px;
   display: flex;
   justify-content: center;
   width: 100%;

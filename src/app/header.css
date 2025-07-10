@@ -1,14 +1,13 @@
 .nav-head{
-  color: #eee6e6;
   display: flex;
-  align-items: center;
   justify-content: space-between;
-  padding: 20px 10%;
-  width: 98%;
-  margin-top: 30px;
-  margin-right: auto;
-  margin-left: auto;
-  /* z-index: 100; */
+  align-items: center;
+  padding: 10px 150px;
+  margin-top: 20px;
+  /* background: #1b4ea7; */
+  position: fixed;
+  border-radius: 50px;
+  width: 100%;
 }
 
 /* style={{ display: "flex", justifyContent: "space-between", alignItems: "center", width: "90%" }} */
@@ -16,8 +15,8 @@
 .header-logo {
   box-shadow: 0 4px 16px 0 rgba(31, 38, 135, 0.18);
   cursor: pointer;
-  justify-content: center;
-  text-align: center;
+  /* justify-content: center;
+  text-align: center; */
 }
 
 
@@ -82,22 +81,19 @@
 
 .nav-list{
   justify-content: center;
-  margin-top: 40px;
   gap: 20px;
   list-style: none;
-
-  width: 100%;
 }
 
 .nav-link {
   font-family: 'Inter', sans-serif;
   list-style: none;
-  color: #db1212;
+  color: #faefef;
   text-decoration: none;
   font-weight: 700;
   transition: color 0.2s, background 0.2s, padding 0.2s, border-radius 0.2s;
   font-size: 1.2rem;
-  /* position: relative; */
+  position: relative;
 } 
 
 .nav-link:hover,
