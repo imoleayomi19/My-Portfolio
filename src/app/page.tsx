@@ -8,40 +8,45 @@ export default function Page() {
   const [showSocials, setShowSocials] = useState(false);
   return (
     <div>
-      <header className="header">
-        <div
-          style={{
-            display: "flex",
-            alignItems: "center",
-            marginTop: "25px",
-            marginLeft: "40px",
-          }}
-          className="header-logo"
-        >
-          <h1>
-            <i>My</i>
-          </h1>
-          <Image
-            src="/portfolio-logo-com.svg"
-            alt="Portfolio Icon"
-            className="portfolio-icon"
-            width={100}
-            height={100}
-          />
-        </div>
-        <nav>
-          <Link className="nav-link" href={""}>
-            Home
-          </Link>
-          <Link className="nav-link" href={""}>
-            About
-          </Link>
-          <Link className="nav-link" href={""}>
-            Skills
-          </Link>
-          <Link className="nav-link" href={""}>
-            Project
-          </Link>
+      <header className="header" style={{ background: "white" }}>
+        <nav className="nav-head" >
+          <div
+            style={{
+              display: "flex",
+              alignItems: "center",
+              marginLeft: "40px",
+            }}
+            className="header-logo"
+          >
+            <h1>
+              <i>My</i>
+            </h1>
+            <Image
+              src="/portfolio-logo-com.svg"
+              alt="Portfolio Icon"
+              className="portfolio-icon"
+              width={50}
+              height={50}
+            />
+          </div>
+          <div style={
+            { position: "absolute", background: "white", minHeight: "30vh", right: "0", top: "30px", width: "30%", display: "flex", justifyContent: "center",}
+          }>
+            <ul className="nav-list"  >
+              <Link className="nav-link" href={""}>
+                Home
+              </Link>
+              <Link className="nav-link" href={""}>
+                About
+              </Link>
+              <Link className="nav-link" href={""}>
+                Skills
+              </Link>
+              <Link className="nav-link" href={""}>
+                Project
+              </Link>
+            </ul>
+          </div>
         </nav>
       </header>
       <section className="home">
@@ -53,10 +58,10 @@ export default function Page() {
                 <p>Frontend Web Developer</p>
                 <i>
                   I&apos;m a front-end web developer skilled in bringing
-                  responsive web designs to life, ensuring they shine across devices. I specialize
-                  in HTML, CSS, JavaScript, React, Next.js and TypeScript,
-                  crafting websites that are not only visually appealing but
-                  also functional and user-friendly.
+                  responsive web designs to life, ensuring they shine across
+                  devices. I specialize in HTML, CSS, JavaScript, React, Next.js
+                  and TypeScript, crafting websites that are not only visually
+                  appealing but also functional and user-friendly.
                 </i>
               </div>
               <div className="home-list-container">
@@ -79,7 +84,11 @@ export default function Page() {
                 className="home-image"
                 width={250}
                 height={325}
-                style={{ objectFit: "cover", borderStartEndRadius: "50px", borderEndStartRadius: "50px", }}
+                style={{
+                  objectFit: "cover",
+                  borderStartEndRadius: "50px",
+                  borderEndStartRadius: "50px",
+                }}
               />
             </div>
           </div>
