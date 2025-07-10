@@ -3,10 +3,11 @@
   justify-content: space-between;
   align-items: center;
   padding: 10px 150px;
-  margin-top: 20px;
-  /* background: #1b4ea7; */
+  background: #3765b6;
   position: fixed;
-  border-radius: 50px;
+  z-index: 1000;
+  top: 0%;
+
   width: 100%;
 }
 
