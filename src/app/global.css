@@ -14,7 +14,7 @@ body {
     );
   background-blend-mode: overlay, lighten, normal;
   background-size: cover, cover, 100px 100px;
-  background-repeat: no-repeat, no-repeat, no-repeat; /* Ensures gradients and image do not repeat */
+  background-repeat: no-repeat, no-repeat, no-repeat; 
   background-position: center, center, right;
   color: #fff;
   font-family: 'Inter', sans-serif;

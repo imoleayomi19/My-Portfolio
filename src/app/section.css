@@ -1,4 +1,4 @@
-.home {
+/* .home {
   margin-top: 120px;
 }
 
@@ -12,7 +12,6 @@
   width: 100%;
   margin: 0px auto 0 auto;
   display: flex;
-  /* flex-direction: row; */
   align-items: center;
   justify-content: center;
   color: #fff;
@@ -89,7 +88,6 @@
   transition: background 0.3s, transform 0.2s;
   margin-top: 20px;
   display: flex;
-  /* margin-left: 170px; */
 }
 
 .home-btn:hover {
@@ -112,11 +110,11 @@
 
 .social-links {
   display: flex;
-  margin-top: 20px ;
+  margin-top: 20px;
   gap: 10px;
   cursor: pointer;
 }
-
+ 
 .social-btn:hover {
   background: linear-gradient(90deg, #554961 0%, #a0b5d8 100%);
   transform: translateY(-2px) scale(1.04);
@@ -126,4 +124,4 @@
   justify-content: center;
   align-items: center;
   display: flex;
-}
+} */
