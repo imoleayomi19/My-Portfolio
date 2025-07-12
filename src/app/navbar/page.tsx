@@ -87,12 +87,7 @@ export default function NavBar() {
               <div 
               className={navbar ? "container open" : "container hidden"}
               style={{ 
-                flex: 1,
-                justifySelf: "center",
-                paddingBottom: "12px",
-                marginTop: navbar ? (window.innerWidth >= 768 ? 0 : 32) : 32,
-                display: window.innerWidth >= 768 ? "block" : navbar ? "block" : "none",
-                padding: navbar ?  (window.innerWidth >= 768 ? 0 : 48) : 0,
+                 display: navbar ? "block" : "none"
               }}
                 >
                   <ul 

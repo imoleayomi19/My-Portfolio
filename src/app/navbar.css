@@ -46,15 +46,11 @@
     margin-top: 0;
   }
 
-  .container{
-    display: block;
-  }
-/* 
   .open{
     padding: 0;
     margin-top: 0;
     display: block;
-  } */
+  }
 
  
   .nav-item:hover{
@@ -152,7 +148,7 @@
   width: 100%;
 } 
 
-/* .container {
+.container {
   flex: 1;
   justify-self: center;
   padding-bottom: 12px;
@@ -165,4 +161,4 @@
 
 .hidden{
     display: none;
-  } */
+  }
