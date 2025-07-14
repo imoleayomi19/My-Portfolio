@@ -4,8 +4,8 @@ export const metadata = {
 };
 
 // import "@/app/mobile.css";
-// import "@/app/header.css";
-// import "@/app/section.css";
+import "@/app/media.css";
+import "@/app/section.css";
 import "@/app/navbar.css";
 
 
