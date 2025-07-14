@@ -17,7 +17,6 @@
   background: none;
   cursor: pointer;
   background: linear-gradient(90deg, #1b4ea7 0%, #00e6e6 100%);
-  /* background: linear-gradient(90deg, #a755ff 0%, #5a96ff 100%); */
   transition: background 0.3s, transform 0.2s;
 }
 

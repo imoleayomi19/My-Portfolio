@@ -6,7 +6,7 @@ import {useNavigation } from "../hooks/useNavigation"
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const [showSocial, setShowSocial] = useState(false)
-   const { handleHomeClick, handleAboutClick, handleSkillsClick, handlePortfolioClick, handleContactClick } =
+   const { handleHomeClick, handleAboutClick, handleSkillsClick, handlePortfolioClick } =
     useNavigation()
     
   const toggleMenu = () => {

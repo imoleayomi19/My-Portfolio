@@ -32,16 +32,11 @@ export function useNavigation() {
     navigateToSection("content-block-3")
   }, [navigateToSection])
 
-  const handleContactClick = useCallback(() => {
-    navigateToSection("content-block-4")
-  }, [navigateToSection])
-
   return {
     navigateToSection,
     handleHomeClick,
     handleAboutClick,
     handleSkillsClick,
     handlePortfolioClick,
-    handleContactClick,
   }
 }
