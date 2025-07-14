@@ -1,14 +1,67 @@
-import Home from "./home/page"
-import NavBar from "./navbar/page"
+import Navbar from "./components/navbar"
+import "./navbar.css"
 
-export default function Page() {
+export default function Home() {
   return (
-    <div>
-      <NavBar />
-      < Home/>
-    </div>
+    <>
+      <Navbar />
+      <main style={{ marginTop: "80px", padding: "2rem" }}>
+        <div style={{ maxWidth: "1200px", margin: "0 auto" }}>
+          <h1>Welcome to Your Website</h1>
+          <p>This is a demo page showing the responsive navbar in action.</p>
+
+          <section style={{ marginTop: "3rem" }}>
+            <h2>Features of this Navbar:</h2>
+            <ul>
+              <li>Fully responsive design</li>
+              <li>Mobile hamburger menu</li>
+              <li>Smooth animations and transitions</li>
+              <li>Hover effects on desktop</li>
+              <li>Fixed positioning</li>
+              <li>Dark mode support</li>
+              <li>No external dependencies</li>
+            </ul>
+          </section>
+
+          <section style={{ marginTop: "3rem" }}>
+            <h2>Test the Responsiveness</h2>
+            <p>Try resizing your browser window or viewing on different devices to see how the navbar adapts:</p>
+            <ul>
+              <li>
+                <strong>Desktop:</strong> Full horizontal menu with hover effects
+              </li>
+              <li>
+                <strong>Tablet:</strong> Adjusted spacing and sizing
+              </li>
+              <li>
+                <strong>Mobile:</strong> Collapsible hamburger menu
+              </li>
+            </ul>
+          </section>
+
+          {/* Add some content to demonstrate scrolling */}
+          <div style={{ height: "100vh", marginTop: "3rem" }}>
+            <h2>Scroll Test</h2>
+            <p>The navbar remains fixed at the top while you scroll through the content.</p>
+            <div style={{ height: "200px", background: "#f0f0f0", margin: "1rem 0", padding: "1rem" }}>
+              Content block 1
+            </div>
+            <div style={{ height: "200px", background: "#e0e0e0", margin: "1rem 0", padding: "1rem" }}>
+              Content block 2
+            </div>
+            <div style={{ height: "200px", background: "#d0d0d0", margin: "1rem 0", padding: "1rem" }}>
+              Content block 3
+            </div>
+          </div>
+        </div>
+      </main>
+    </>
   )
 }
+
+
+
+
 
 
 //               <div className="home-text">
