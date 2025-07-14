@@ -1,13 +1,14 @@
 "use client"
 
 import { useState } from "react"
-import Link from "next/link"
-
+import {useNavigation } from "../hooks/useNavigation"
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const [showSocial, setShowSocial] = useState(false)
-
+   const { handleHomeClick, handleAboutClick, handleSkillsClick, handlePortfolioClick, handleContactClick } =
+    useNavigation()
+    
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen)
   }
@@ -20,34 +21,39 @@ export default function Navbar() {
     setIsMenuOpen(false)
   }
 
+ const handleNavigation = (clickHandler: () => void) => {
+    clickHandler()
+    closeMenu() // Close mobile menu after navigation
+  }
+
   return (
     <nav className="navbar">
       <div className="nav-container">
         {/* Logo */}
-        <Link href="/" className="nav-logo" onClick={closeMenu}>
-        MYportfolio
-        </Link>
+         <button className="nav-logo nav-button" onClick={() => handleNavigation(handleHomeClick)}>
+          MYportfolio
+        </button>
 
         <ul className={`nav-menu ${isMenuOpen ? "active" : ""}`}>
           <li className="nav-item">
-            <Link href="/" className="nav-link" onClick={closeMenu}>
+            <button className="nav-link nav-button" onClick={() => handleNavigation(handleHomeClick)}>
               Home
-            </Link>
+            </button>
           </li>
           <li className="nav-item">
-            <Link href="/about" className="nav-link" onClick={closeMenu}>
+            <button className="nav-link nav-button" onClick={() => handleNavigation(handleAboutClick)}>
               About
-            </Link>
+            </button>
           </li>
           <li className="nav-item">
-            <Link href="/services" className="nav-link" onClick={closeMenu}>
+           <button className="nav-link nav-button" onClick={() => handleNavigation(handleSkillsClick)}>
               Skills
-            </Link>
+            </button>
           </li>
           <li className="nav-item">
-            <Link href="/portfolio" className="nav-link" onClick={closeMenu}>
+             <button className="nav-link nav-button" onClick={() => handleNavigation(handlePortfolioClick)}>
               Portfolio
-            </Link>
+            </button>
           </li>
         </ul>
 

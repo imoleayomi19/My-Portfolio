@@ -22,6 +22,7 @@
   font-weight: bold;
   color: #333;
   text-decoration: none;
+  background: none;
   transition: color 0.3s ease;
 }
 
@@ -48,6 +49,7 @@
   padding: 0.5rem 0;
   position: relative;
   transition: color 0.3s ease;
+  background: none;
 }
 
 .nav-link:hover {
@@ -85,7 +87,7 @@
   border-radius: 2px;
 }
 
-/* Mobile Styles */
+
 @media screen and (max-width: 768px) {
   .nav-menu {
     position: fixed;
@@ -132,7 +134,7 @@
   }
 }
 
-/* Tablet Styles */
+
 @media screen and (max-width: 1024px) and (min-width: 769px) {
   .nav-container {
     padding: 1rem 2rem;
@@ -143,14 +145,14 @@
   }
 }
 
-/* Large Desktop Styles */
+
 @media screen and (min-width: 1200px) {
   .nav-container {
     padding: 1rem 0;
   }
 }
 
-/* Dark mode support */
+
 @media (prefers-color-scheme: dark) {
   .navbar {
     background-color: #1a1a1a;
@@ -262,7 +264,7 @@
   border-radius: 2px;
 }
 
-/* Mobile Styles */
+
 @media screen and (max-width: 768px) {
   .nav-menu {
     position: fixed;
@@ -366,7 +368,7 @@
   }
 }
 
-/* Extra small mobile screens */
+
 @media screen and (max-width: 480px) {
   .content {
     padding: 20px;
@@ -391,7 +393,7 @@
   }
 }
 
-/* Tablet Styles */
+
 @media screen and (max-width: 1024px) and (min-width: 769px) {
   .nav-container {
     padding: 1rem 2rem;
@@ -402,14 +404,14 @@
   }
 }
 
-/* Large Desktop Styles */
+
 @media screen and (min-width: 1200px) {
   .nav-container {
     padding: 1rem 0;
   }
 }
 
-/* Dark mode support */
+
 @media (prefers-color-scheme: dark) {
   .navbar {
     background-color: #1a1a1a;
