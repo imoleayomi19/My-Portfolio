@@ -26,11 +26,13 @@
   color: #00e6e6;
   font-size: 1.8rem;
   letter-spacing: 2px;
+    /* background: linear-gradient(90deg, #2575fc 0%, #6a11cb 100%); */
+
   text-shadow:
     1px 1px 0 #222,
-    2px 2px 0 #1b4ea7,
-    3px 3px 2px #00e6e6,
-    0 0 20px #00e6e6;
+    2px 2px 0 #6a11cb,
+    3px 3px 2px #004ed4,
+    0 0 20px #004ed4;
   transform: perspective(200px) rotateX(10deg) scale(1.05);
   animation: my3d-bounce 1.2s cubic-bezier(0.23, 1, 0.32, 1), my3d-glow 2s infinite alternate;
 } 
@@ -51,7 +53,7 @@
 }
 
 .nav-logo:hover {
-  color: #2575fc ;
+  color: #f8faff ;
 }
 
 .nav-menu {
@@ -182,6 +184,25 @@
   .nav-toggle.active .bar:nth-child(3) {
     transform: translateY(-8px) rotate(-45deg);
   }
+
+  /* #content-block-1{
+    scroll-margin-top: 100px;
+  }
+
+  #content-block-2{
+        scroll-margin-top: 100px;
+
+  }
+  
+  #content-block-3{
+        scroll-margin-top: 100px;
+
+  }
+
+  #content-block-4{
+        scroll-margin-top: 100px;
+
+  } */
 }
 
 /* Tablet Styles */
@@ -193,6 +214,8 @@
   .nav-menu {
     gap: 1.5rem;
   }
+
+  
 }
 
 /* Large Desktop Styles */
@@ -200,6 +223,23 @@
   .nav-container {
     padding: 1rem 0;
   }
+
+  #content-block-1{
+    height: 300px;
+  }
+
+  #content-block-2{
+    height: 350px;
+  }
+
+  #content-block-3{
+    height: 400px;
+  }
+
+  #content-block-4{
+    height: 350px;
+  }
+  
 }
 
 /* Dark mode support */
@@ -216,7 +256,7 @@
 
   .nav-logo:hover,
   .nav-link:hover {
-    color: #f6fbff;
+    color: #e5eeff;
   }
 
   .bar {
@@ -242,12 +282,12 @@
   transition: color 0.3s ease;
   background: none;
   cursor: pointer;
-  background: linear-gradient(90deg, #2f59a1 0%, #5bdada 100%);
+  background: linear-gradient(90deg, #2575fc 0%, #6a11cb 100%);
   transition: background 0.3s, transform 0.2s;
 }
 
 .contact-btn:hover {
-  background: linear-gradient(90deg, #274a86 0%, #358080 100%);
+  background: linear-gradient(90deg, #2a5bb1 0%, #7b30cc 100%);
   transform: translateY(-2px) scale(1.03);
   color: white;
 }
@@ -372,11 +412,11 @@
   margin-bottom: 0.5rem;
 }
 .home-text p {
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   margin-bottom: 1rem;
 }
 .home-text i {
-  font-size: 0.95rem;
+  font-size: 0.98rem;
   line-height: 1.5;
 }
 .home-list-container {
@@ -385,7 +425,7 @@
 
 .home-list li {
   margin-bottom: 0.8rem;
-  font-size: 0.9rem;
+  font-size: 1rem;
 }
 
 .image-container {

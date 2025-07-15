@@ -66,13 +66,13 @@ export default function Home() {
               id="content-block-1"
               className="content-block about-section"
               style={{
-                height: "300px",
+                // height: "300px",
                 background: "linear-gradient(135deg, #667eea 0%, #764ba2 100%)",
                 margin: "2rem 0",
                 padding: "2rem",
                 borderRadius: "15px",
                 border: "3px solid #007bff",
-                scrollMarginTop: "100px",
+                scrollMarginTop: "200px",
                 color: "white",
                 boxShadow: "0 8px 32px rgba(0, 0, 0, 0.3)",
               }}
@@ -110,13 +110,13 @@ export default function Home() {
               id="content-block-2"
               className="content-block services-section"
               style={{
-                height: "350px",
+                // height: "350px",
                 background: "linear-gradient(135deg, #f093fb 0%, #f5576c 100%)",
                 margin: "2rem 0",
                 padding: "2rem",
                 borderRadius: "15px",
                 border: "3px solid #f5576c",
-                scrollMarginTop: "100px",
+                scrollMarginTop: "160px",
                 color: "white",
                 boxShadow: "0 8px 32px rgba(0, 0, 0, 0.3)",
               }}
@@ -128,7 +128,7 @@ export default function Home() {
                   fontSize: "2rem",
                 }}
               >
-                My Services
+                Skills
               </h2>
               <div
                 style={{
@@ -152,7 +152,7 @@ export default function Home() {
                     React, Next.js, and modern CSS.
                   </p>
                 </div>
-                <div
+                {/* <div
                   style={{
                     background: "rgba(255, 255, 255, 0.1)",
                     padding: "1rem",
@@ -164,7 +164,7 @@ export default function Home() {
                     Creating intuitive user interfaces and engaging user
                     experiences.
                   </p>
-                </div>
+                </div> */}
                 <div
                   style={{
                     background: "rgba(255, 255, 255, 0.1)",
@@ -172,9 +172,10 @@ export default function Home() {
                     borderRadius: "10px",
                   }}
                 >
-                  <h3 style={{ marginBottom: "0.5rem" }}>Web Optimization</h3>
+                  <h3 style={{ marginBottom: "0.5rem" }}>Design</h3>
                   <p style={{ fontSize: "0.9rem" }}>
-                    Improving website performance, SEO, and accessibility.
+                    Elevating brands through thoughtful, creative, and effective
+                    graphic design.{" "}
                   </p>
                 </div>
               </div>
@@ -185,13 +186,13 @@ export default function Home() {
               id="content-block-3"
               className="content-block portfolio-section"
               style={{
-                height: "400px",
+                // height: "400px",
                 background: "linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)",
                 margin: "2rem 0",
                 padding: "2rem",
                 borderRadius: "15px",
                 border: "3px solid #00f2fe",
-                scrollMarginTop: "100px",
+                scrollMarginTop: "120px",
                 color: "white",
                 boxShadow: "0 8px 32px rgba(0, 0, 0, 0.3)",
               }}
@@ -220,7 +221,7 @@ export default function Home() {
                     textAlign: "center",
                   }}
                 >
-                  <h3 style={{ marginBottom: "1rem" }}>E-commerce Platform</h3>
+                  <h3 style={{ marginBottom: "1rem" }}>My first WebPage</h3>
                   <p style={{ fontSize: "0.9rem", marginBottom: "1rem" }}>
                     A full-featured online store built with Next.js and Stripe
                     integration.
@@ -233,7 +234,7 @@ export default function Home() {
                       fontSize: "0.8rem",
                     }}
                   >
-                    React • Next.js • TypeScript
+                    Html • CSS 
                   </div>
                 </div>
                 <div
@@ -291,7 +292,7 @@ export default function Home() {
               id="content-block-4"
               className="content-block contact-section"
               style={{
-                height: "350px",
+                // height: "350px",
                 background: "linear-gradient(135deg, #a8edea 0%, #fed6e3 100%)",
                 margin: "2rem 0",
                 padding: "2rem",
@@ -323,16 +324,10 @@ export default function Home() {
                     Contact Information
                   </h3>
                   <div style={{ marginBottom: "0.8rem" }}>
-                    <strong>Email:</strong> emmanuel.imole@example.com
+                    <strong>Email:</strong> eakintunde51@Gmail.com
                   </div>
                   <div style={{ marginBottom: "0.8rem" }}>
-                    <strong>Phone:</strong> +1 (555) 123-4567
-                  </div>
-                  <div style={{ marginBottom: "0.8rem" }}>
-                    <strong>Location:</strong> New York, NY
-                  </div>
-                  <div>
-                    <strong>Available:</strong> Monday - Friday, 9AM - 6PM EST
+                    <strong>Location:</strong> Lagos, NG
                   </div>
                 </div>
                 <div>
@@ -345,16 +340,6 @@ export default function Home() {
                     improve an existing application, or just have questions
                     about web development, I&apos;d love to hear from you.
                   </p>
-                  <div
-                    style={{
-                      background: "rgba(0, 123, 255, 0.1)",
-                      padding: "1rem",
-                      borderRadius: "8px",
-                      border: "1px solid rgba(0, 123, 255, 0.3)",
-                    }}
-                  >
-                    <strong>Response Time:</strong> Usually within 24 hours
-                  </div>
                 </div>
               </div>
             </div>

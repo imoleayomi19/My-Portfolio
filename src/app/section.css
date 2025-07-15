@@ -19,7 +19,7 @@
     0 16px 48px 0 rgba(117, 82, 82, 0.25), 0 1.5px 10px 0 rgba(0, 0, 0, 0.15);
   background: rgba(0, 0, 0, 0.15);
   border-radius: 20px;
-  padding: 32px;
+  padding: 72px;
 }
 
 .home-container {
@@ -39,7 +39,7 @@
 }
 
 .home-text i {
-  font-size: 1rem;
+  font-size: 1.1rem;
   line-height: 1.6;
   color: #d0d0d0;
 }
