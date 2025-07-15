@@ -1,36 +1,36 @@
-"use client"
+"use client";
 
-import { useCallback } from "react"
+import { useCallback } from "react";
 
 export function useNavigation() {
   const navigateToSection = useCallback((sectionId: string) => {
-    const element = document.getElementById(sectionId)
+    const element = document.getElementById(sectionId);
     if (element) {
       element.scrollIntoView({
         behavior: "smooth",
         block: "start",
-      })
+      });
     }
-  }, [])
+  }, []);
 
   const handleHomeClick = useCallback(() => {
     window.scrollTo({
       top: 0,
       behavior: "smooth",
-    })
-  }, [])
+    });
+  }, []);
 
   const handleAboutClick = useCallback(() => {
-    navigateToSection("content-block-1")
-  }, [navigateToSection])
+    navigateToSection("content-block-1");
+  }, [navigateToSection]);
 
   const handleSkillsClick = useCallback(() => {
-    navigateToSection("content-block-2")
-  }, [navigateToSection])
+    navigateToSection("content-block-2");
+  }, [navigateToSection]);
 
   const handlePortfolioClick = useCallback(() => {
-    navigateToSection("content-block-3")
-  }, [navigateToSection])
+    navigateToSection("content-block-3");
+  }, [navigateToSection]);
 
   return {
     navigateToSection,
@@ -38,5 +38,5 @@ export function useNavigation() {
     handleAboutClick,
     handleSkillsClick,
     handlePortfolioClick,
-  }
+  };
 }
