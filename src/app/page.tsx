@@ -221,10 +221,9 @@ export default function Home() {
                     textAlign: "center",
                   }}
                 >
-                  <h3 style={{ marginBottom: "1rem" }}>My first WebPage</h3>
+                  <h3 style={{ marginBottom: "1rem" }}>My First WebPage</h3>
                   <p style={{ fontSize: "0.9rem", marginBottom: "1rem" }}>
-                    A full-featured online store built with Next.js and Stripe
-                    integration.
+                    I created my first webpage showcasing the Ile-Ife Grand Resort, highlighting its attractions and experiences for visitors in Ile-Ife, Nigeria.
                   </p>
                   <div
                     style={{
@@ -234,7 +233,7 @@ export default function Home() {
                       fontSize: "0.8rem",
                     }}
                   >
-                    Html • CSS 
+                   • Html • CSS 
                   </div>
                 </div>
                 <div
@@ -245,10 +244,9 @@ export default function Home() {
                     textAlign: "center",
                   }}
                 >
-                  <h3 style={{ marginBottom: "1rem" }}>Task Management App</h3>
+                  <h3 style={{ marginBottom: "1rem" }}>Emmy-Quiz-App</h3>
                   <p style={{ fontSize: "0.9rem", marginBottom: "1rem" }}>
-                    A collaborative project management tool with real-time
-                    updates.
+                     A quiz app featuring questions on JavaScript, targeting developers and tech learners.
                   </p>
                   <div
                     style={{
@@ -258,7 +256,7 @@ export default function Home() {
                       fontSize: "0.8rem",
                     }}
                   >
-                    React • Firebase • CSS
+                    • CSS • JavScript 
                   </div>
                 </div>
                 <div
@@ -269,9 +267,9 @@ export default function Home() {
                     textAlign: "center",
                   }}
                 >
-                  <h3 style={{ marginBottom: "1rem" }}>Weather Dashboard</h3>
+                  <h3 style={{ marginBottom: "1rem" }}>Fitness-Tracker-Project</h3>
                   <p style={{ fontSize: "0.9rem", marginBottom: "1rem" }}>
-                    A responsive weather app with location-based forecasts.
+                    FitTrack is a simple, intuitive fitness tracking application that helps users log and visualize their workout progress.
                   </p>
                   <div
                     style={{
@@ -281,7 +279,30 @@ export default function Home() {
                       fontSize: "0.8rem",
                     }}
                   >
-                    JavaScript • API • CSS
+                   • React • CSS
+                  </div>
+                </div>
+                <div
+                  style={{
+                    background: "rgba(255, 255, 255, 0.15)",
+                    padding: "1.5rem",
+                    borderRadius: "10px",
+                    textAlign: "center",
+                  }}
+                >
+                  <h3 style={{ marginBottom: "1rem" }}>My-Portfolio</h3>
+                  <p style={{ fontSize: "0.9rem", marginBottom: "1rem" }}>
+                    This project highlights my skills in using TypeScript for building scalable and maintainable code.
+                  </p>
+                  <div
+                    style={{
+                      background: "rgba(255, 255, 255, 0.2)",
+                      padding: "0.5rem",
+                      borderRadius: "5px",
+                      fontSize: "0.8rem",
+                    }}
+                  >
+                   • TypeScript • CSS
                   </div>
                 </div>
               </div>

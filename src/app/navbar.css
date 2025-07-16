@@ -26,6 +26,7 @@
   color: #00e6e6;
   font-size: 1.8rem;
   letter-spacing: 2px;
+  border: none;
     /* background: linear-gradient(90deg, #2575fc 0%, #6a11cb 100%); */
 
   text-shadow:
@@ -242,6 +243,28 @@
   
 }
 
+/* Light mode support */
+@media (prefers-color-scheme: light) {
+  .navbar {
+    background: linear-gradient(135deg, #5c6bc0 0%, #7a6c9d 100%);
+    box-shadow: 0 2px 4px rgba(255, 255, 255, 0.1);
+  }
+
+  .nav-logo,
+  .nav-link {
+    color: #ffffff;
+  }
+
+  .nav-logo:hover,
+  .nav-link:hover {
+    color: #e5eeff;
+  }
+
+  .bar {
+    background-color: #ffffff;
+  }
+}
+
 /* Dark mode support */
 @media (prefers-color-scheme: dark) {
   .navbar {
@@ -276,6 +299,7 @@
   padding: 12px 32px;
   font-size: 1.1rem;
   color: #fff;
+  border: none;
   text-decoration: none;
   font-weight: 600;
   position: relative;
@@ -360,6 +384,24 @@
   }
 }
 
+/* Light mode for social contact */
+@media (prefers-color-scheme: light) {
+  .social-links {
+    background-color: #ecebeb;
+    border: 1px solid #444;
+  }
+
+  .social-link {
+    color: #000000;
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+  }
+
+  .social-link:hover {
+    background-color: #3a3a3a;
+    color: #0077ff;
+  }
+}
 /* Dark mode for social contact */
 @media (prefers-color-scheme: dark) {
   .social-links {
@@ -401,6 +443,7 @@
 .nav-logo{
   padding: 0.4rem 0.8rem;
   font-size: 0.9rem;
+  border: none;
 }
 
 .home-container {
