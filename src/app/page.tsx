@@ -82,6 +82,7 @@ export default function Home() {
                   color: "white",
                   marginBottom: "1rem",
                   fontSize: "2rem",
+                  fontFamily: "fantasy",
                 }}
               >
                 About Me
@@ -91,6 +92,7 @@ export default function Home() {
                   fontSize: "1.1rem",
                   lineHeight: "1.6",
                   marginBottom: "1rem",
+                  fontFamily: "sans-serif",
                 }}
               >
                 I&apos;m a passionate frontend developer with expertise in
@@ -98,17 +100,23 @@ export default function Home() {
                 with a curiosity about how websites work, and it has evolved
                 into a career focused on creating exceptional user experiences.
               </p>
-              <p style={{ fontSize: "1rem", lineHeight: "1.6" }}>
+              <p
+                style={{
+                  fontSize: "1rem",
+                  lineHeight: "1.6",
+                  fontFamily: "sans-serif",
+                }}
+              >
                 I believe in writing clean, maintainable code and staying
                 up-to-date with the latest industry trends and best practices.
                 My goal is to bridge the gap between design and functionality.
               </p>
             </div>
 
-            {/* Services Section - Content Block 2 */}
+            {/* Skills Section - Content Block 2 */}
             <div
               id="content-block-2"
-              className="content-block services-section"
+              className="content-block skill-section"
               style={{
                 // height: "350px",
                 background: "linear-gradient(135deg, #f093fb 0%, #f5576c 100%)",
@@ -126,6 +134,7 @@ export default function Home() {
                   color: "white",
                   marginBottom: "1.5rem",
                   fontSize: "2rem",
+                  fontFamily: "cursive",
                 }}
               >
                 Skills
@@ -144,27 +153,14 @@ export default function Home() {
                     borderRadius: "10px",
                   }}
                 >
-                  <h3 style={{ marginBottom: "0.5rem" }}>
+                  <h2 style={{ marginBottom: "0.5rem" }}>
                     Frontend Development
-                  </h3>
-                  <p style={{ fontSize: "0.9rem" }}>
+                  </h2>
+                  <p style={{ fontSize: "1rem", fontFamily: "cursive" }}>
                     Building responsive, interactive web applications using
                     React, Next.js, and modern CSS.
                   </p>
                 </div>
-                {/* <div
-                  style={{
-                    background: "rgba(255, 255, 255, 0.1)",
-                    padding: "1rem",
-                    borderRadius: "10px",
-                  }}
-                >
-                  <h3 style={{ marginBottom: "0.5rem" }}>UI/UX Design</h3>
-                  <p style={{ fontSize: "0.9rem" }}>
-                    Creating intuitive user interfaces and engaging user
-                    experiences.
-                  </p>
-                </div> */}
                 <div
                   style={{
                     background: "rgba(255, 255, 255, 0.1)",
@@ -172,10 +168,10 @@ export default function Home() {
                     borderRadius: "10px",
                   }}
                 >
-                  <h3 style={{ marginBottom: "0.5rem" }}>Design</h3>
-                  <p style={{ fontSize: "0.9rem" }}>
+                  <h2 style={{ marginBottom: "0.5rem" }}>Design</h2>
+                  <p style={{ fontSize: "1rem", fontFamily: "cursive" }}>
                     Elevating brands through thoughtful, creative, and effective
-                    graphic design.{" "}
+                    graphic design.
                   </p>
                 </div>
               </div>
@@ -202,6 +198,7 @@ export default function Home() {
                   color: "white",
                   marginBottom: "1.5rem",
                   fontSize: "2rem",
+                  fontFamily: "monospace",
                 }}
               >
                 My Portfolio
@@ -216,24 +213,28 @@ export default function Home() {
                 <div
                   style={{
                     background: "rgba(255, 255, 255, 0.15)",
-                    padding: "1.5rem",
+                    padding: "10px",
                     borderRadius: "10px",
+
                     textAlign: "center",
                   }}
                 >
                   <h3 style={{ marginBottom: "1rem" }}>My First WebPage</h3>
-                  <p style={{ fontSize: "0.9rem", marginBottom: "1rem" }}>
-                    I created my first webpage showcasing the Ile-Ife Grand Resort, highlighting its attractions and experiences for visitors in Ile-Ife, Nigeria.
+                  <p style={{ fontSize: "1rem", marginBottom: "1rem" }}>
+                    I created my first webpage showcasing the Ile-Ife Grand
+                    Resort, highlighting its attractions and experiences for
+                    visitors in Ile-Ife, Nigeria.
                   </p>
                   <div
                     style={{
                       background: "rgba(255, 255, 255, 0.2)",
                       padding: "0.5rem",
                       borderRadius: "5px",
-                      fontSize: "0.8rem",
+                      fontWeight: "900",
+                      fontSize: "0.9rem",
                     }}
                   >
-                   • Html • CSS 
+                    • HTML • CSS
                   </div>
                 </div>
                 <div
@@ -245,41 +246,47 @@ export default function Home() {
                   }}
                 >
                   <h3 style={{ marginBottom: "1rem" }}>Emmy-Quiz-App</h3>
-                  <p style={{ fontSize: "0.9rem", marginBottom: "1rem" }}>
-                     A quiz app featuring questions on JavaScript, targeting developers and tech learners.
+                  <p style={{ fontSize: "1rem", marginBottom: "1rem" }}>
+                    A quiz app featuring questions on JavaScript, targeting
+                    developers and tech learners.
                   </p>
                   <div
                     style={{
                       background: "rgba(255, 255, 255, 0.2)",
                       padding: "0.5rem",
                       borderRadius: "5px",
-                      fontSize: "0.8rem",
+                      fontWeight: "900",
+                      fontSize: "0.9rem",
                     }}
                   >
-                    • CSS • JavScript 
+                    • CSS • JavaScript
                   </div>
                 </div>
                 <div
                   style={{
                     background: "rgba(255, 255, 255, 0.15)",
-                    padding: "1.5rem",
+                    padding: "0.7rem",
                     borderRadius: "10px",
                     textAlign: "center",
                   }}
                 >
-                  <h3 style={{ marginBottom: "1rem" }}>Fitness-Tracker-Project</h3>
-                  <p style={{ fontSize: "0.9rem", marginBottom: "1rem" }}>
-                    FitTrack is a simple, intuitive fitness tracking application that helps users log and visualize their workout progress.
+                  <h3 style={{ marginBottom: "1rem" }}>
+                    Fitness-Tracker-Project
+                  </h3>
+                  <p style={{ fontSize: "1rem", marginBottom: "1rem" }}>
+                    FitTrack is a simple, intuitive fitness tracking application
+                    that helps users log and visualize their workout progress.
                   </p>
                   <div
                     style={{
                       background: "rgba(255, 255, 255, 0.2)",
-                      padding: "0.5rem",
+                      padding: "0.5rem  ",
                       borderRadius: "5px",
-                      fontSize: "0.8rem",
+                      fontWeight: "900",
+                      fontSize: "0.9rem",
                     }}
                   >
-                   • React • CSS
+                    • React • CSS
                   </div>
                 </div>
                 <div
@@ -291,18 +298,20 @@ export default function Home() {
                   }}
                 >
                   <h3 style={{ marginBottom: "1rem" }}>My-Portfolio</h3>
-                  <p style={{ fontSize: "0.9rem", marginBottom: "1rem" }}>
-                    This project highlights my skills in using TypeScript for building scalable and maintainable code.
+                  <p style={{ fontSize: "1rem", marginBottom: "1rem" }}>
+                    This project highlights my skills in using TypeScript for
+                    building scalable and maintainable code.
                   </p>
                   <div
                     style={{
                       background: "rgba(255, 255, 255, 0.2)",
                       padding: "0.5rem",
                       borderRadius: "5px",
-                      fontSize: "0.8rem",
+                      fontWeight: "900",
+                      fontSize: "0.9rem",
                     }}
                   >
-                   • TypeScript • CSS
+                    • TypeScript • CSS
                   </div>
                 </div>
               </div>
@@ -311,56 +320,101 @@ export default function Home() {
             {/* Contact Section - Content Block 4 */}
             <div
               id="content-block-4"
-              className="content-block contact-section"
+              // className="content-block contact-section"
               style={{
                 // height: "350px",
                 background: "linear-gradient(135deg, #a8edea 0%, #fed6e3 100%)",
-                margin: "2rem 0",
-                padding: "2rem",
-                borderRadius: "15px",
-                border: "3px solid #fed6e3",
+                // margin: "2rem 0",
+                padding: "1rem",
+                // borderRadius: "15px",
+                // border: "3px solid #fed6e3",
                 scrollMarginTop: "100px",
                 color: "#333",
                 boxShadow: "0 8px 32px rgba(0, 0, 0, 0.3)",
+                alignItems: "center",
+                textAlign: "center",
               }}
             >
-              <h2
-                style={{
-                  color: "#333",
-                  marginBottom: "1.5rem",
-                  fontSize: "2rem",
-                }}
-              >
-                Get In Touch
-              </h2>
-              <div
-                style={{
-                  display: "grid",
-                  gridTemplateColumns: "repeat(auto-fit, minmax(250px, 1fr))",
-                  gap: "2rem",
-                }}
-              >
-                <div>
-                  <h3 style={{ marginBottom: "1rem", color: "#555" }}>
-                    Contact Information
-                  </h3>
-                  <div style={{ marginBottom: "0.8rem" }}>
-                    <strong>Email:</strong> eakintunde51@Gmail.com
-                  </div>
-                  <div style={{ marginBottom: "0.8rem" }}>
-                    <strong>Location:</strong> Lagos, NG
-                  </div>
-                </div>
+              <div>
                 <div>
                   <h3 style={{ marginBottom: "1rem", color: "#555" }}>
                     Let&apos;s Work Together
                   </h3>
-                  <p style={{ lineHeight: "1.6", marginBottom: "1rem" }}>
+                  <p
+                    style={{
+                      //  lineHeight: "1.6",
+                      marginBottom: "1rem",
+                      alignItems: "center",
+                      textAlign: "center",
+                    }}
+                  >
                     I&apos;m always interested in new opportunities and exciting
                     projects. Whether you need a complete website, want to
-                    improve an existing application, or just have questions
-                    about web development, I&apos;d love to hear from you.
+                    improve an existing web app, or just have questions about
+                    web development, I&apos;d love to hear from you.
                   </p>
+                </div>
+                <div>
+                  <h3 style={{ marginBottom: "1rem", color: "#555" }}>
+                    Contact Information
+                  </h3>
+                  <div style={{ marginBottom: "1rem",}}>
+                    <strong>Location:</strong> Lagos, NG.
+                  </div>
+                </div>
+                <div>
+                  <a
+                    href="https://x.com/EmmanuelE81101"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    // className="social-link"
+                  >
+                    <img
+                      src="/icons8-x (1).svg"
+                      alt="LinkedIn"
+                      width={24}
+                      height={24}
+                    />
+                  </a>
+                  <a
+                    href="https://www.linkedin.com/in/emmanuel-imole-3b62b1367/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    // className="social-link"
+                  >
+                    <img
+                      src="/icons8-linkedin.svg"
+                      alt="LinkedIn"
+                      width={24}
+                      height={24}
+                    />
+                  </a>
+                  <a
+                    href="https://github.com/imoleayomi19"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    // className="social-link"
+                  >
+                    <img
+                      src="/icons8-github.svg"
+                      alt="GitHub"
+                      width={24}
+                      height={24}
+                    />
+                  </a>
+                  <a
+                    href="mailto:eakintunde51@gmail.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    // className="social-link"
+                  >
+                    <img
+                      src="/icons8-gmail.svg"
+                      alt="Email"
+                      width={24}
+                      height={24}
+                    />
+                  </a>
                 </div>
               </div>
             </div>
