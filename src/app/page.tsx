@@ -349,7 +349,7 @@ export default function Home() {
                     }}
                   >
                     I&apos;m always interested in new opportunities and exciting
-                    projects. Whether you need a complete website, want to
+                    projects. Whether you need a landing page or complete website, want to
                     improve an existing web app, or just have questions about
                     web development, I&apos;d love to hear from you.
                   </p>
