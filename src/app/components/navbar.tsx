@@ -38,7 +38,7 @@ export default function Navbar() {
           className="nav-logo nav-button"
           onClick={() => handleNavigation(handleHomeClick)}
         >
-          MYportfolio
+          ImoleAyo.
         </button>
 
         <ul className={`nav-menu ${isMenuOpen ? "active" : ""}`}>
