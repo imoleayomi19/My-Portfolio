@@ -24,11 +24,11 @@ export default function Home() {
                   <h2>Hi, I&apos;m Emmanuel Imole</h2>
                   <p>Frontend Web Developer</p>
                   <i>
-                    I&apos;m a front-end web developer skilled in bringing
-                    responsive web designs to life, ensuring they shine across
-                    devices. I specialize in HTML, CSS, JavaScript, React,
-                    Next.js and TypeScript, crafting websites that are not only
-                    visually appealing but also functional and user-friendly.
+                    I&apos;m a front-end developer who builds websites that look
+                    great on phones, tablets, and laptops. I use everyday web
+                    tools—HTML, CSS, JavaScript—and modern helpers like React
+                    and Next.js to make pages load fast, feel smooth, and stay
+                    easy to use for everyone.
                   </i>
                 </div>
                 <div className="home-list-container">
@@ -85,7 +85,7 @@ export default function Home() {
                   fontFamily: "fantasy",
                 }}
               >
-                About Me
+                👋 About Me
               </h2>
               <p
                 style={{
@@ -95,10 +95,12 @@ export default function Home() {
                   fontFamily: "sans-serif",
                 }}
               >
-                I&apos;m a passionate frontend developer with expertise in
-                modern web technologies. My journey in web development started
-                with a curiosity about how websites work, and it has evolved
-                into a career focused on creating exceptional user experiences.
+                I&apos;m Emmanuel – a Lagos-based frontend developer who loves
+                turning ideas into fast, beautiful websites. I started by
+                Googling “How does a website work?” and never stopped learning.
+                Today I build with React, Next.js, and TypeScript, but the
+                mission is still the same: make the web easier and nicer for
+                real people.
               </p>
               <p
                 style={{
@@ -114,19 +116,17 @@ export default function Home() {
             </div>
 
             {/* Skills Section - Content Block 2 */}
-            <div
+            {/* <div
               id="content-block-2"
               className="content-block skill-section"
               style={{
                 // height: "350px",
-                background: "linear-gradient(135deg, #f093fb 0%, #f5576c 100%)",
+               
                 margin: "2rem 0",
                 padding: "2rem",
                 borderRadius: "15px",
-                border: "3px solid #f5576c",
                 scrollMarginTop: "160px",
                 color: "white",
-                boxShadow: "0 8px 32px rgba(0, 0, 0, 0.3)",
               }}
             >
               <h2
@@ -148,7 +148,6 @@ export default function Home() {
               >
                 <div
                   style={{
-                    background: "rgba(255, 255, 255, 0.1)",
                     padding: "1rem",
                     borderRadius: "10px",
                   }}
@@ -163,7 +162,6 @@ export default function Home() {
                 </div>
                 <div
                   style={{
-                    background: "rgba(255, 255, 255, 0.1)",
                     padding: "1rem",
                     borderRadius: "10px",
                   }}
@@ -175,7 +173,7 @@ export default function Home() {
                   </p>
                 </div>
               </div>
-            </div>
+            </div> */}
 
             {/* Portfolio Section - Content Block 3 */}
             <div
@@ -201,7 +199,10 @@ export default function Home() {
                   fontFamily: "monospace",
                 }}
               >
-                My Portfolio
+                ✨ Featured Projects 
+                
+                {/* Click any card to open the live demo and
+                repo. */}
               </h2>
               <div
                 style={{
@@ -221,9 +222,8 @@ export default function Home() {
                 >
                   <h3 style={{ marginBottom: "1rem" }}>My First WebPage</h3>
                   <p style={{ fontSize: "1rem", marginBottom: "1rem" }}>
-                    I created my first webpage showcasing the Ile-Ife Grand
-                    Resort, highlighting its attractions and experiences for
-                    visitors in Ile-Ife, Nigeria.
+                    🏖 Ile-Ife Grand Resort – First Ever Webpage A single-page
+                    brochure for a Nigerian resort. 
                   </p>
                   <div
                     style={{
@@ -234,21 +234,22 @@ export default function Home() {
                       fontSize: "0.9rem",
                     }}
                   >
-                    • HTML • CSS
+                    Tech: HTML, CSS Flexbox,
+                    Netlify Forms
                   </div>
                 </div>
                 <div
                   style={{
                     background: "rgba(255, 255, 255, 0.15)",
-                    padding: "1.5rem",
+                    padding: "0.5rem",
                     borderRadius: "10px",
                     textAlign: "center",
                   }}
                 >
                   <h3 style={{ marginBottom: "1rem" }}>Emmy-Quiz-App</h3>
                   <p style={{ fontSize: "1rem", marginBottom: "1rem" }}>
-                    A quiz app featuring questions on JavaScript, targeting
-                    developers and tech learners.
+                    ❓ Emmy Quiz App A 50-question JavaScript quiz with instant
+                    feedback and a scoreboard.
                   </p>
                   <div
                     style={{
@@ -259,13 +260,14 @@ export default function Home() {
                       fontSize: "0.9rem",
                     }}
                   >
-                    • CSS • JavaScript
+                     Tech: Vanilla JS, CSS Grid,
+                    LocalStorage
                   </div>
                 </div>
                 <div
                   style={{
                     background: "rgba(255, 255, 255, 0.15)",
-                    padding: "0.7rem",
+                    padding: "1rem",
                     borderRadius: "10px",
                     textAlign: "center",
                   }}
@@ -274,8 +276,8 @@ export default function Home() {
                     Fitness-Tracker-Project
                   </h3>
                   <p style={{ fontSize: "1rem", marginBottom: "1rem" }}>
-                    FitTrack is a simple, intuitive fitness tracking application
-                    that helps users log and visualize their workout progress.
+                    🏋 FitTrack Log workouts, see progress charts, and set
+                    weekly goals.
                   </p>
                   <div
                     style={{
@@ -286,21 +288,21 @@ export default function Home() {
                       fontSize: "0.9rem",
                     }}
                   >
-                    • React • CSS
+                    Tech: React, Chart.js, CSS Modules
                   </div>
                 </div>
                 <div
                   style={{
                     background: "rgba(255, 255, 255, 0.15)",
-                    padding: "1.5rem",
+                    padding: "1.3rem",
                     borderRadius: "10px",
                     textAlign: "center",
                   }}
                 >
-                  <h3 style={{ marginBottom: "1rem" }}>My-Portfolio</h3>
+                  <h3 style={{ marginBottom: "1rem" }}>🌐 This Portfolio</h3>
                   <p style={{ fontSize: "1rem", marginBottom: "1rem" }}>
-                    This project highlights my skills in using TypeScript for
-                    building scalable and maintainable code.
+                    You’re looking at it! Built to practice TypeScript and
+                    dynamic routing.
                   </p>
                   <div
                     style={{
@@ -311,7 +313,7 @@ export default function Home() {
                       fontSize: "0.9rem",
                     }}
                   >
-                    • TypeScript • CSS
+                    Tech: Next.js, TypeScript, CSS
                   </div>
                 </div>
               </div>
@@ -338,7 +340,7 @@ export default function Home() {
               <div>
                 <div>
                   <h3 style={{ marginBottom: "1rem", color: "#555" }}>
-                    Let&apos;s Work Together
+                    🤝 Let&apos;s Build Something
                   </h3>
                   <p
                     style={{
@@ -348,26 +350,23 @@ export default function Home() {
                       textAlign: "center",
                     }}
                   >
-                    I&apos;m always interested in new opportunities and exciting
-                    projects. Whether you need a landing page or complete website, want to
-                    improve an existing web app, or just have questions about
-                    web development, I&apos;d love to hear from you.
+                    Whether you need a landing page, a blog, or help fixing a
+                    slow site, I&apos;m one email away.
                   </p>
                 </div>
                 <div>
-                  <h3 style={{ marginBottom: "1rem", color: "#555" }}>
-                    Contact Information
-                  </h3>
-                  <div style={{ marginBottom: "1rem",}}>
-                    <strong>Location:</strong> Lagos, NG.
+                  <div style={{ marginBottom: "1rem" }}>
+                    <strong>📍</strong>Lagos, Nigeria
                   </div>
                 </div>
                 <div>
+                  {/* 📬 hello@emmanuelimole.me https://x.com/yourhandle
+                  https://linkedin.com/in/yourhandle
+                  https://github.com/yourhandle */}
                   <a
                     href="https://x.com/EmmanuelE81101"
                     target="_blank"
                     rel="noopener noreferrer"
-                    // className="social-link"
                   >
                     <img
                       src="/icons8-x (1).svg"
@@ -380,7 +379,6 @@ export default function Home() {
                     href="https://www.linkedin.com/in/emmanuel-imole-3b62b1367/"
                     target="_blank"
                     rel="noopener noreferrer"
-                    // className="social-link"
                   >
                     <img
                       src="/icons8-linkedin.svg"
@@ -393,7 +391,6 @@ export default function Home() {
                     href="https://github.com/imoleayomi19"
                     target="_blank"
                     rel="noopener noreferrer"
-                    // className="social-link"
                   >
                     <img
                       src="/icons8-github.svg"
@@ -406,7 +403,6 @@ export default function Home() {
                     href="mailto:eakintunde51@gmail.com"
                     target="_blank"
                     rel="noopener noreferrer"
-                    // className="social-link"
                   >
                     <img
                       src="/icons8-gmail.svg"
@@ -422,5 +418,5 @@ export default function Home() {
         </div>
       </main>
     </>
-  );
+    );
 }
