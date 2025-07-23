@@ -72,6 +72,144 @@
 }
 
 .home-image {
-  border-bottom-right-radius: 60px;
-  border-top-left-radius: 60px;
+ border-bottom-right-radius: 60px;
+ border-top-left-radius: 60px;
+ border-bottom-left-radius: 20px;
+ border-top-right-radius: 20px;
+ border: 3px solid honeydew;
+ animation: borderHoneydewChartreuse 2s infinite;
+}
+
+@keyframes borderHoneydewChartreuse {
+ 0% {
+ border-color: honeydew;
  }
+ 50% {
+ border-color: chartreuse;
+ }
+ 100% {
+ border-color:honeydew;
+}
+}
+ 
+/* Portfolio Navigation Arrows */
+.portfolio-nav-btn {
+  background: linear-gradient(90deg, #2575fc 0%, #6a11cb 100%);
+  border-radius: 50%;
+  border: 2px solid bisque;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: white;
+  font-size: 2rem;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  position: absolute; /* Position relative to parent flex container */
+  z-index: 10;
+}
+
+.portfolio-nav-btn:hover {
+   background: linear-gradient(90deg, #89b2f8 0%, #9050d4 100%);
+  text-shadow:
+    1px 1px 0 #222,
+    2px 2px 0 #6a11cb,
+    3px 3px 2px #004ed4,
+    0 0 20px #004ed4;
+} 
+ @keyframes my3d-bounce {
+  0% {
+    transform: perspective(200px) rotateX(60deg) scale(0.7);
+    opacity: 0;
+    text-shadow: none;
+  }
+  60% {
+    transform: perspective(200px) rotateX(-10deg) scale(1.1);
+    opacity: 1;
+  }
+  100% {
+    transform: perspective(200px) rotateX(10deg) scale(1.05);
+    opacity: 1;
+  }
+}
+
+.portfolio-nav-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.portfolio-nav-btn.prev-btn {
+  left: 0;
+  transform: translateX(-50%); /* Adjust to be outside the content block */
+}
+
+.portfolio-nav-btn.next-btn {
+  right: 0;
+  transform: translateX(50%); /* Adjust to be outside the content block */
+}
+
+
+/* Styling for portfolio project images */
+.portfolio-project-image {
+  width: 100%;
+  height: auto;
+  max-height: 200px; /* Limit height to keep consistent */
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 1rem; /* Space between image and description */
+}
+
+/* Base animation properties for content blocks */
+.content-block > div > div.portfolio-item {
+  /* Target individual portfolio item within the block */
+  animation-duration: 0.7s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-out;
+}
+
+/* Fade In Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.fade-in-animation {
+  animation-name: fadeIn;
+}
+
+/* Slide In Right Animation */
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+.slide-in-right-animation {
+  animation-name: slideInRight;
+}
+
+/* Zoom In Animation */
+@keyframes zoomIn {
+  from {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+.zoom-in-animation {
+  animation-name: zoomIn;
+}

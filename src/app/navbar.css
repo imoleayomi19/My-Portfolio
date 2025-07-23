@@ -27,8 +27,6 @@
   font-size: 1.8rem;
   letter-spacing: 2px;
   border: none;
-    /* background: linear-gradient(90deg, #2575fc 0%, #6a11cb 100%); */
-
   text-shadow:
     1px 1px 0 #222,
     2px 2px 0 #6a11cb,
@@ -70,8 +68,6 @@
 }
 
  .nav-link {   
-    /* background: none; */
-
   position: relative;
   padding: 0.5rem 0;
   font-family: 'Inter', sans-serif;
@@ -185,6 +181,27 @@
   .nav-toggle.active .bar:nth-child(3) {
     transform: translateY(-8px) rotate(-45deg);
   }
+
+  
+/* Mobile adjustments for portfolio navigation arrows */
+
+  .portfolio-nav-btn {
+    width: 40px;
+    height: 40px;
+    font-size: 1.5rem;
+      background: linear-gradient(90deg, #2575fc 0%, #6a11cb 100%);
+  }
+
+  .portfolio-nav-btn.prev-btn {
+    left: -25px; /* Adjust position for smaller screens */
+    transform: translateX(0);
+  }
+
+  .portfolio-nav-btn.next-btn {
+    right: -25px; /* Adjust position for smaller screens */
+    transform: translateX(0);
+  }
+
 
   /* #content-block-1{
     scroll-margin-top: 100px;

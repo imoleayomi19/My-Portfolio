@@ -1,15 +1,86 @@
+"use client";
+
 import Navbar from "./components/navbar";
 import "./navbar.css";
 import Image from "next/image";
+import { useState } from "react";
 
 export default function Home() {
+  const portfolioProjects = [
+    {
+      id: "project-1",
+      title: "My First WebPage",
+      description:
+        " 🏖 Ile-Ife Grand Resort – First Ever Webpage A single-page brochure for a Nigerian resort.",
+      tech: "  Tech: HTML, CSS Flexbox, Netlify Forms",
+      image: "/ife.jpg?height=300&width=300",
+    },
+    {
+      id: "project-1",
+      title: "Emmy-Quiz-App",
+      description:
+        " ❓ Emmy Quiz App A 50-question JavaScript quiz with instant feedback and a scoreboard.",
+      tech: " Vanilla JS, CSS Grid, LocalStorage",
+      image: "/quiz.jpg?height=200&width=300",
+    },
+    {
+      id: "project-1",
+      title: "Fitness-Tracker-Project",
+      description:
+        " 🏋 FitTrack Log workouts, see progress charts, and set weekly goals.",
+      tech: "React, Chart.js, CSS Modules",
+      image: "/workout.jpg?height=200&width=300",
+    },
+    {
+      id: "project-1",
+      title: "🌐 This Portfolio",
+      description:
+        "You’re looking at it! Built to practice TypeScript and dynamic routing.",
+      tech: "Next.js, TypeScript, CSS",
+      image: "/folio-2.jpg?height=200&width=300",
+    },
+  ];
+
+  const [currentProjectIndex, setCurrentProjectIndex] = useState(0);
+  const portfolioAnimations = [
+    "fade-in-animation",
+    "slide-in-right-animation",
+    "zoom-in-animation",
+  ];
+  const [currentPortfolioAnimation, setCurrentPortfolioAnimation] = useState(
+    portfolioAnimations[0]
+  );
+
+  const handleNextProject = () => {
+    setCurrentProjectIndex((prevIndex) => {
+      const nextIndex = (prevIndex + 1) % portfolioProjects.length;
+      setCurrentPortfolioAnimation(
+        portfolioAnimations[nextIndex % portfolioAnimations.length]
+      );
+      return nextIndex;
+    });
+  };
+
+  const handlePrevProject = () => {
+    setCurrentProjectIndex((prevIndex) => {
+      const nextIndex =
+        (prevIndex - 1 + portfolioProjects.length) % portfolioProjects.length;
+      setCurrentPortfolioAnimation(
+        portfolioAnimations[nextIndex % portfolioAnimations.length]
+      );
+      return nextIndex;
+    });
+  };
+
+  const currentProject = portfolioProjects[currentProjectIndex];
+
   return (
     <>
       <Navbar />
       <main
         className="cont"
         style={{
-          marginTop: "60px",
+          marginTop: "40px",
           padding: "2rem",
           position: "absolute",
           left: "0",
@@ -21,7 +92,9 @@ export default function Home() {
             <div className="content">
               <div className="home-container">
                 <div className="home-text">
-                  <h2>Hi, I&apos;m Emmanuel Imole</h2>
+                  <h2>
+                    <span>Hi!</span> I&apos;m Emmanuel
+                  </h2>
                   <p>Frontend Web Developer</p>
                   <i>
                     I&apos;m a front-end developer who builds websites that look
@@ -60,8 +133,12 @@ export default function Home() {
           </section>
 
           {/* Navigation Content Blocks */}
-          <div style={{ marginTop: "3rem" }}>
+          <div style={{
+            marginTop: "5rem",
+
+          }}>
             {/* About Section - Content Block 1 */}
+        
             <div
               id="content-block-1"
               className="content-block about-section"
@@ -71,22 +148,21 @@ export default function Home() {
                 margin: "2rem 0",
                 padding: "2rem",
                 borderRadius: "15px",
-                border: "3px solid #007bff",
+                // border: "3px solid #007bff",
                 scrollMarginTop: "200px",
                 color: "white",
                 boxShadow: "0 8px 32px rgba(0, 0, 0, 0.3)",
               }}
             >
-              <h2
-                style={{
-                  color: "white",
-                  marginBottom: "1rem",
-                  fontSize: "2rem",
-                  fontFamily: "fantasy",
-                }}
-              >
-                👋 About Me
-              </h2>
+                  <h2
+              style={{
+                color: "white",
+                fontSize: "2rem",
+                fontFamily: "fantasy",
+              }}
+            >
+              👋 About <span style={{ color: "yellow" }}>Me</span>
+            </h2>
               <p
                 style={{
                   fontSize: "1.1rem",
@@ -102,27 +178,15 @@ export default function Home() {
                 mission is still the same: make the web easier and nicer for
                 real people.
               </p>
-              <p
-                style={{
-                  fontSize: "1rem",
-                  lineHeight: "1.6",
-                  fontFamily: "sans-serif",
-                }}
-              >
-                I believe in writing clean, maintainable code and staying
-                up-to-date with the latest industry trends and best practices.
-                My goal is to bridge the gap between design and functionality.
-              </p>
             </div>
 
             {/* Skills Section - Content Block 2 */}
-            {/* <div
+            <div
               id="content-block-2"
               className="content-block skill-section"
               style={{
-                // height: "350px",
-               
-                margin: "2rem 0",
+                marginTop: "2rem",
+                marginBottom: "2rem",
                 padding: "2rem",
                 borderRadius: "15px",
                 scrollMarginTop: "160px",
@@ -132,12 +196,12 @@ export default function Home() {
               <h2
                 style={{
                   color: "white",
-                  marginBottom: "1.5rem",
+                  marginBottom: "3.5rem",
                   fontSize: "2rem",
                   fontFamily: "cursive",
                 }}
               >
-                Skills
+                My <span style={{ color: "yellow" }}>Skills</span>
               </h2>
               <div
                 style={{
@@ -150,6 +214,7 @@ export default function Home() {
                   style={{
                     padding: "1rem",
                     borderRadius: "10px",
+                    background: "darkslategrey",
                   }}
                 >
                   <h2 style={{ marginBottom: "0.5rem" }}>
@@ -164,6 +229,7 @@ export default function Home() {
                   style={{
                     padding: "1rem",
                     borderRadius: "10px",
+                    background: "darkslategrey",
                   }}
                 >
                   <h2 style={{ marginBottom: "0.5rem" }}>Design</h2>
@@ -173,22 +239,28 @@ export default function Home() {
                   </p>
                 </div>
               </div>
-            </div> */}
+            </div>
 
             {/* Portfolio Section - Content Block 3 */}
             <div
               id="content-block-3"
               className="content-block portfolio-section"
               style={{
-                // height: "400px",
-                background: "linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)",
-                margin: "2rem 0",
+                // background: "linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)",
+                margin: "2rem auto",
+                marginBottom: "100px",
                 padding: "2rem",
                 borderRadius: "15px",
-                border: "3px solid #00f2fe",
+                // border: "3px solid #00f2fe",
                 scrollMarginTop: "120px",
                 color: "white",
-                boxShadow: "0 8px 32px rgba(0, 0, 0, 0.3)",
+                // boxShadow: "0 8px 32px rgba(0, 0, 0, 0.3)",
+                display: "flex",
+                flexDirection: "column",
+                alignItems: "center",
+                justifyContent: "center",
+                position: "relative",
+                maxWidth: "800px",
               }}
             >
               <h2
@@ -199,137 +271,102 @@ export default function Home() {
                   fontFamily: "monospace",
                 }}
               >
-                ✨ Featured Projects 
-                
-                {/* Click any card to open the live demo and
-                repo. */}
+                ✨ Featured <span  style={{ color: "yellow" }} >Projects</span>
               </h2>
               <div
                 style={{
-                  display: "grid",
-                  gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))",
-                  gap: "1rem",
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center",
+                  width: "100%",
+                  position: "relative",
                 }}
               >
+                <button
+                  className="portfolio-nav-btn prev-btn"
+                  onClick={handlePrevProject}
+                  disabled={currentProjectIndex === 0}
+                >
+                  <Image
+                    src="/back-svg.svg"
+                    alt="Previous Project"
+                    width={22}
+                    height={22}
+                  />
+                </button>
                 <div
+                  key={currentProject.id} // Key ensures re-render for animation
+                  className={`portfolio-item ${currentProject.id === portfolioProjects[0].id
+                      ? "active-portfolio-item"
+                      : ""
+                    } ${currentPortfolioAnimation}`}
                   style={{
                     background: "rgba(255, 255, 255, 0.15)",
-                    padding: "10px",
+                    padding: "1.5rem",
                     borderRadius: "10px",
+                    textAlign: "center",
+                    width: "min(100%, 400px)", // Limit width of single project
+                    flexShrink: 0, // Prevent shrinking
+                  }}
+                >
+                  <h2
+                    style={{ marginBottom: "1rem", fontFamily: "sans-serif" }}
+                  >
+                    {currentProject.title}
+                  </h2>
+                  {currentProject.image && (
+                    <Image
+                      src={currentProject.image || "/ife.png"}
+                      alt={currentProject.title}
+                      width={300}
+                      height={300}
+                      className="portfolio-project-image"
+                    />
+                  )}
 
-                    textAlign: "center",
-                  }}
-                >
-                  <h3 style={{ marginBottom: "1rem" }}>My First WebPage</h3>
-                  <p style={{ fontSize: "1rem", marginBottom: "1rem" }}>
-                    🏖 Ile-Ife Grand Resort – First Ever Webpage A single-page
-                    brochure for a Nigerian resort. 
+                  <p style={{ fontSize: "1.1rem", marginBottom: "1rem" }}>
+                    {currentProject.description}
                   </p>
                   <div
                     style={{
                       background: "rgba(255, 255, 255, 0.2)",
                       padding: "0.5rem",
                       borderRadius: "5px",
-                      fontWeight: "900",
-                      fontSize: "0.9rem",
+                      fontSize: "1rem",
+                      fontWeight: "600",
                     }}
                   >
-                    Tech: HTML, CSS Flexbox,
-                    Netlify Forms
+                    {currentProject.tech}
                   </div>
                 </div>
-                <div
-                  style={{
-                    background: "rgba(255, 255, 255, 0.15)",
-                    padding: "0.5rem",
-                    borderRadius: "10px",
-                    textAlign: "center",
-                  }}
+                <button
+                  className="portfolio-nav-btn next-btn"
+                  onClick={handleNextProject}
+                  disabled={
+                    currentProjectIndex === portfolioProjects.length - 1
+                  }
                 >
-                  <h3 style={{ marginBottom: "1rem" }}>Emmy-Quiz-App</h3>
-                  <p style={{ fontSize: "1rem", marginBottom: "1rem" }}>
-                    ❓ Emmy Quiz App A 50-question JavaScript quiz with instant
-                    feedback and a scoreboard.
-                  </p>
-                  <div
-                    style={{
-                      background: "rgba(255, 255, 255, 0.2)",
-                      padding: "0.5rem",
-                      borderRadius: "5px",
-                      fontWeight: "900",
-                      fontSize: "0.9rem",
-                    }}
-                  >
-                     Tech: Vanilla JS, CSS Grid,
-                    LocalStorage
-                  </div>
-                </div>
-                <div
-                  style={{
-                    background: "rgba(255, 255, 255, 0.15)",
-                    padding: "1rem",
-                    borderRadius: "10px",
-                    textAlign: "center",
-                  }}
-                >
-                  <h3 style={{ marginBottom: "1rem" }}>
-                    Fitness-Tracker-Project
-                  </h3>
-                  <p style={{ fontSize: "1rem", marginBottom: "1rem" }}>
-                    🏋 FitTrack Log workouts, see progress charts, and set
-                    weekly goals.
-                  </p>
-                  <div
-                    style={{
-                      background: "rgba(255, 255, 255, 0.2)",
-                      padding: "0.5rem  ",
-                      borderRadius: "5px",
-                      fontWeight: "900",
-                      fontSize: "0.9rem",
-                    }}
-                  >
-                    Tech: React, Chart.js, CSS Modules
-                  </div>
-                </div>
-                <div
-                  style={{
-                    background: "rgba(255, 255, 255, 0.15)",
-                    padding: "1.3rem",
-                    borderRadius: "10px",
-                    textAlign: "center",
-                  }}
-                >
-                  <h3 style={{ marginBottom: "1rem" }}>🌐 This Portfolio</h3>
-                  <p style={{ fontSize: "1rem", marginBottom: "1rem" }}>
-                    You’re looking at it! Built to practice TypeScript and
-                    dynamic routing.
-                  </p>
-                  <div
-                    style={{
-                      background: "rgba(255, 255, 255, 0.2)",
-                      padding: "0.5rem",
-                      borderRadius: "5px",
-                      fontWeight: "900",
-                      fontSize: "0.9rem",
-                    }}
-                  >
-                    Tech: Next.js, TypeScript, CSS
-                  </div>
-                </div>
+                  <Image
+                    src="/next-svg.svg"
+                    alt="Previous Project"
+                    width={22}
+                    height={22}
+                  />
+                </button>
               </div>
+              {/* <div
+                style={{ marginTop: "1rem", fontSize: "1rem", color: "white" }}
+              >
+                {currentProjectIndex + 1} / {portfolioProjects.length}
+              </div> */}
             </div>
 
             {/* Contact Section - Content Block 4 */}
             <div
               id="content-block-4"
-              // className="content-block contact-section"
               style={{
-                // height: "350px",
                 background: "linear-gradient(135deg, #a8edea 0%, #fed6e3 100%)",
-                // margin: "2rem 0",
                 padding: "1rem",
-                // borderRadius: "15px",
-                // border: "3px solid #fed6e3",
                 scrollMarginTop: "100px",
                 color: "#333",
                 boxShadow: "0 8px 32px rgba(0, 0, 0, 0.3)",
@@ -344,7 +381,6 @@ export default function Home() {
                   </h3>
                   <p
                     style={{
-                      //  lineHeight: "1.6",
                       marginBottom: "1rem",
                       alignItems: "center",
                       textAlign: "center",
@@ -360,9 +396,6 @@ export default function Home() {
                   </div>
                 </div>
                 <div>
-                  {/* 📬 hello@emmanuelimole.me https://x.com/yourhandle
-                  https://linkedin.com/in/yourhandle
-                  https://github.com/yourhandle */}
                   <a
                     href="https://x.com/EmmanuelE81101"
                     target="_blank"
@@ -418,5 +451,103 @@ export default function Home() {
         </div>
       </main>
     </>
-    );
+  );
 }
+//       <h3 style={{ marginBottom: "1rem" }}>My First WebPage</h3>
+//       <p style={{ fontSize: "1rem", marginBottom: "1rem" }}>
+//         🏖 Ile-Ife Grand Resort – First Ever Webpage A single-page
+//         brochure for a Nigerian resort.
+//       </p>
+//       <div
+//         style={{
+//           background: "rgba(255, 255, 255, 0.2)",
+//           padding: "0.5rem",
+//           borderRadius: "5px",
+//           fontWeight: "900",
+//           fontSize: "0.9rem",
+//         }}
+//       >
+//         Tech: HTML, CSS Flexbox,
+//         Netlify Forms
+//       </div>
+//     </div>
+//     <div
+//       style={{
+//         background: "rgba(255, 255, 255, 0.15)",
+//         padding: "0.5rem",
+//         borderRadius: "10px",
+//         textAlign: "center",
+//       }}
+//     >
+//       <h3 style={{ marginBottom: "1rem" }}>Emmy-Quiz-App</h3>
+//       <p style={{ fontSize: "1rem", marginBottom: "1rem" }}>
+//         ❓ Emmy Quiz App A 50-question JavaScript quiz with instant
+//         feedback and a scoreboard.
+//       </p>
+//       <div
+//         style={{
+//           background: "rgba(255, 255, 255, 0.2)",
+//           padding: "0.5rem",
+//           borderRadius: "5px",
+//           fontWeight: "900",
+//           fontSize: "0.9rem",
+//         }}
+//       >
+//          Tech: Vanilla JS, CSS Grid,
+//         LocalStorage
+//       </div>
+//     </div>
+//     <div
+//       style={{
+//         background: "rgba(255, 255, 255, 0.15)",
+//         padding: "1rem",
+//         borderRadius: "10px",
+//         textAlign: "center",
+//       }}
+//     >
+//       <h3 style={{ marginBottom: "1rem" }}>
+//         Fitness-Tracker-Project
+//       </h3>
+//       <p style={{ fontSize: "1rem", marginBottom: "1rem" }}>
+//         🏋 FitTrack Log workouts, see progress charts, and set
+//         weekly goals.
+//       </p>
+//       <div
+//         style={{
+//           background: "rgba(255, 255, 255, 0.2)",
+//           padding: "0.5rem  ",
+//           borderRadius: "5px",
+//           fontWeight: "900",
+//           fontSize: "0.9rem",
+//         }}
+//       >
+//         Tech: React, Chart.js, CSS Modules
+//       </div>
+//     </div>
+//     <div
+//       style={{
+//         background: "rgba(255, 255, 255, 0.15)",
+//         padding: "1.3rem",
+//         borderRadius: "10px",
+//         textAlign: "center",
+//       }}
+//     >
+//       <h3 style={{ marginBottom: "1rem" }}>🌐 This Portfolio</h3>
+//       <p style={{ fontSize: "1rem", marginBottom: "1rem" }}>
+//         You’re looking at it! Built to practice TypeScript and
+//         dynamic routing.
+//       </p>
+//       <div
+//         style={{
+//           background: "rgba(255, 255, 255, 0.2)",
+//           padding: "0.5rem",
+//           borderRadius: "5px",
+//           fontWeight: "900",
+//           fontSize: "0.9rem",
+//         }}
+//       >
+//         Tech: Next.js, TypeScript, CSS
+//       </div>
+//     </div>
+//   </div>
+// </div>
