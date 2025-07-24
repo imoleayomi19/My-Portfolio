@@ -93,7 +93,7 @@ export default function Home() {
               <div className="home-container">
                 <div className="home-text">
                   <h2>
-                    <span>Hi!</span> I&apos;m Emmanuel
+                    <span className="wave">👋</span> I&apos;m Emmanuel
                   </h2>
                   <p>Frontend Web Developer</p>
                   <i>
@@ -143,15 +143,17 @@ export default function Home() {
               id="content-block-1"
               className="content-block about-section"
               style={{
-                // height: "300px",
-                background: "linear-gradient(135deg, #667eea 0%, #764ba2 100%)",
+                // background: "linear-gradient(135deg, #667eea 0%, #764ba2 100%)",
                 margin: "2rem 0",
                 padding: "2rem",
                 borderRadius: "15px",
                 // border: "3px solid #007bff",
                 scrollMarginTop: "200px",
                 color: "white",
+                alignItems: "center",
                 boxShadow: "0 8px 32px rgba(0, 0, 0, 0.3)",
+                gap: "20px",
+              
               }}
             >
                   <h2
@@ -161,7 +163,7 @@ export default function Home() {
                 fontFamily: "fantasy",
               }}
             >
-              👋 About <span style={{ color: "yellow" }}>Me</span>
+              🙋‍♂️&nbsp; About <span style={{ color: "yellow" }}>&nbsp; Me</span>
             </h2>
               <p
                 style={{
@@ -196,12 +198,12 @@ export default function Home() {
               <h2
                 style={{
                   color: "white",
-                  marginBottom: "3.5rem",
+                  marginBottom: "2.5rem",
                   fontSize: "2rem",
                   fontFamily: "cursive",
                 }}
               >
-                My <span style={{ color: "yellow" }}>Skills</span>
+               👩‍💻  My <span style={{ color: "yellow" }}>Skills</span>
               </h2>
               <div
                 style={{
@@ -211,13 +213,13 @@ export default function Home() {
                 }}
               >
                 <div
+                  className="skills"
                   style={{
-                    padding: "1rem",
+                    padding: "2rem",
                     borderRadius: "10px",
-                    background: "darkslategrey",
                   }}
                 >
-                  <h2 style={{ marginBottom: "0.5rem" }}>
+                  <h2 style={{ marginBottom: "0.8rem" }}>
                     Frontend Development
                   </h2>
                   <p style={{ fontSize: "1rem", fontFamily: "cursive" }}>
@@ -226,13 +228,13 @@ export default function Home() {
                   </p>
                 </div>
                 <div
+                  className="skills"
                   style={{
-                    padding: "1rem",
+                    padding: "2rem",
                     borderRadius: "10px",
-                    background: "darkslategrey",
                   }}
                 >
-                  <h2 style={{ marginBottom: "0.5rem" }}>Design</h2>
+                  <h2 style={{ marginBottom: "0.8rem" }}>Design</h2>
                   <p style={{ fontSize: "1rem", fontFamily: "cursive" }}>
                     Elevating brands through thoughtful, creative, and effective
                     graphic design.
@@ -365,18 +367,19 @@ export default function Home() {
             <div
               id="content-block-4"
               style={{
-                background: "linear-gradient(135deg, #a8edea 0%, #fed6e3 100%)",
+                background: "linear-gradient(135deg, #667eea 0%, #764ba2 100%)",
                 padding: "1rem",
                 scrollMarginTop: "100px",
-                color: "#333",
+                color: "white",
                 boxShadow: "0 8px 32px rgba(0, 0, 0, 0.3)",
+                borderRadius: "500px",
                 alignItems: "center",
                 textAlign: "center",
               }}
             >
               <div>
                 <div>
-                  <h3 style={{ marginBottom: "1rem", color: "#555" }}>
+                  <h3 style={{ marginBottom: "1rem", color: "white" }}>
                     🤝 Let&apos;s Build Something
                   </h3>
                   <p
@@ -391,8 +394,8 @@ export default function Home() {
                   </p>
                 </div>
                 <div>
-                  <div style={{ marginBottom: "1rem" }}>
-                    <strong>📍</strong>Lagos, Nigeria
+                  <div style={{ marginBottom: "1rem", fontWeight: "600" }}>
+                    <strong>📍</strong> Lagos, Nigeria.
                   </div>
                 </div>
                 <div>
@@ -453,101 +456,3 @@ export default function Home() {
     </>
   );
 }
-//       <h3 style={{ marginBottom: "1rem" }}>My First WebPage</h3>
-//       <p style={{ fontSize: "1rem", marginBottom: "1rem" }}>
-//         🏖 Ile-Ife Grand Resort – First Ever Webpage A single-page
-//         brochure for a Nigerian resort.
-//       </p>
-//       <div
-//         style={{
-//           background: "rgba(255, 255, 255, 0.2)",
-//           padding: "0.5rem",
-//           borderRadius: "5px",
-//           fontWeight: "900",
-//           fontSize: "0.9rem",
-//         }}
-//       >
-//         Tech: HTML, CSS Flexbox,
-//         Netlify Forms
-//       </div>
-//     </div>
-//     <div
-//       style={{
-//         background: "rgba(255, 255, 255, 0.15)",
-//         padding: "0.5rem",
-//         borderRadius: "10px",
-//         textAlign: "center",
-//       }}
-//     >
-//       <h3 style={{ marginBottom: "1rem" }}>Emmy-Quiz-App</h3>
-//       <p style={{ fontSize: "1rem", marginBottom: "1rem" }}>
-//         ❓ Emmy Quiz App A 50-question JavaScript quiz with instant
-//         feedback and a scoreboard.
-//       </p>
-//       <div
-//         style={{
-//           background: "rgba(255, 255, 255, 0.2)",
-//           padding: "0.5rem",
-//           borderRadius: "5px",
-//           fontWeight: "900",
-//           fontSize: "0.9rem",
-//         }}
-//       >
-//          Tech: Vanilla JS, CSS Grid,
-//         LocalStorage
-//       </div>
-//     </div>
-//     <div
-//       style={{
-//         background: "rgba(255, 255, 255, 0.15)",
-//         padding: "1rem",
-//         borderRadius: "10px",
-//         textAlign: "center",
-//       }}
-//     >
-//       <h3 style={{ marginBottom: "1rem" }}>
-//         Fitness-Tracker-Project
-//       </h3>
-//       <p style={{ fontSize: "1rem", marginBottom: "1rem" }}>
-//         🏋 FitTrack Log workouts, see progress charts, and set
-//         weekly goals.
-//       </p>
-//       <div
-//         style={{
-//           background: "rgba(255, 255, 255, 0.2)",
-//           padding: "0.5rem  ",
-//           borderRadius: "5px",
-//           fontWeight: "900",
-//           fontSize: "0.9rem",
-//         }}
-//       >
-//         Tech: React, Chart.js, CSS Modules
-//       </div>
-//     </div>
-//     <div
-//       style={{
-//         background: "rgba(255, 255, 255, 0.15)",
-//         padding: "1.3rem",
-//         borderRadius: "10px",
-//         textAlign: "center",
-//       }}
-//     >
-//       <h3 style={{ marginBottom: "1rem" }}>🌐 This Portfolio</h3>
-//       <p style={{ fontSize: "1rem", marginBottom: "1rem" }}>
-//         You’re looking at it! Built to practice TypeScript and
-//         dynamic routing.
-//       </p>
-//       <div
-//         style={{
-//           background: "rgba(255, 255, 255, 0.2)",
-//           padding: "0.5rem",
-//           borderRadius: "5px",
-//           fontWeight: "900",
-//           fontSize: "0.9rem",
-//         }}
-//       >
-//         Tech: Next.js, TypeScript, CSS
-//       </div>
-//     </div>
-//   </div>
-// </div>

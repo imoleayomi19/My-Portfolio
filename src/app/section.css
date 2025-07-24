@@ -91,7 +91,7 @@
  border-color:honeydew;
 }
 }
- 
+
 /* Portfolio Navigation Arrows */
 .portfolio-nav-btn {
   background: linear-gradient(90deg, #2575fc 0%, #6a11cb 100%);
@@ -149,7 +149,6 @@
   right: 0;
   transform: translateX(50%); /* Adjust to be outside the content block */
 }
-
 
 /* Styling for portfolio project images */
 .portfolio-project-image {
@@ -212,4 +211,33 @@
 }
 .zoom-in-animation {
   animation-name: zoomIn;
+}
+
+.skills{
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37),
+    0 16px 48px 0 rgba(117, 82, 82, 0.25), 0 1.5px 10px 0 rgba(0, 0, 0, 0.15);
+  
+}
+
+.skills:hover{
+  cursor: pointer;
+  border-radius: 5px;
+  background: linear-gradient(90deg, darkslategrey 0%, #6a11cb 100%);
+}
+
+.wave{
+  animation: wave 0.7s infinite;
+  display: inline-block;
+}
+
+@keyframes wave {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(20deg);
+  }
+  100%{
+    rotate: (0deg);
+  }
 }

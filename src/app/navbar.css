@@ -79,8 +79,6 @@
   font-size: 1.2rem;
   }
 
-
-
 .nav-link:hover,
 .nav-link:focus {
   border-radius: 5px;
@@ -104,12 +102,10 @@
   bottom: 0;
 }
 
-
 .nav-link:hover::after,
 .nav-link:focus::after {
   width: 100%;
 } 
-
 
 /* Navigation button styling */
 .nav-button {
@@ -186,19 +182,19 @@
 /* Mobile adjustments for portfolio navigation arrows */
 
   .portfolio-nav-btn {
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
     font-size: 1.5rem;
       background: linear-gradient(90deg, #2575fc 0%, #6a11cb 100%);
   }
 
   .portfolio-nav-btn.prev-btn {
-    left: -25px; /* Adjust position for smaller screens */
+    left: -28px; /* Adjust position for smaller screens */
     transform: translateX(0);
   }
 
   .portfolio-nav-btn.next-btn {
-    right: -25px; /* Adjust position for smaller screens */
+    right: -28px; /* Adjust position for smaller screens */
     transform: translateX(0);
   }
 
