@@ -203,7 +203,7 @@ export default function Home() {
                   fontFamily: "cursive",
                 }}
               >
-              👨‍💻 My <span style={{ color: "yellow" }}>Skills</span>
+              👨‍💻My <span style={{ color: "yellow" }}>Skills</span>
               </h2>
               <div
                 style={{
@@ -248,15 +248,11 @@ export default function Home() {
               id="content-block-3"
               className="content-block portfolio-section"
               style={{
-                // background: "linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)",
                 margin: "2rem auto",
-                marginBottom: "100px",
                 padding: "2rem",
                 borderRadius: "15px",
-                // border: "3px solid #00f2fe",
-                scrollMarginTop: "120px",
+                scrollMarginTop: "190px",
                 color: "white",
-                // boxShadow: "0 8px 32px rgba(0, 0, 0, 0.3)",
                 display: "flex",
                 flexDirection: "column",
                 alignItems: "center",
@@ -276,6 +272,7 @@ export default function Home() {
                 ✨ Featured <span  style={{ color: "yellow" }} >Projects</span>
               </h2>
               <div
+                className="feature-p"
                 style={{
                   display: "flex",
                   alignItems: "center",
