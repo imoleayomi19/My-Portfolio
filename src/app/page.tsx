@@ -163,7 +163,7 @@ export default function Home() {
                 fontFamily: "fantasy",
               }}
             >
-              🙋‍♂️&nbsp; About <span style={{ color: "yellow" }}>&nbsp; Me</span>
+              🙋‍♂️&nbsp;About<span style={{ color: "yellow" }}>&nbsp;Me</span>
             </h2>
               <p
                 style={{
@@ -203,7 +203,7 @@ export default function Home() {
                   fontFamily: "cursive",
                 }}
               >
-               👩‍💻  My <span style={{ color: "yellow" }}>Skills</span>
+              👨‍💻 My <span style={{ color: "yellow" }}>Skills</span>
               </h2>
               <div
                 style={{
