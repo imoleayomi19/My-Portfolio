@@ -197,15 +197,19 @@
     transform: translateX(0);
   }
 
-  /* #content-block-1{
-    scroll-margin-top: 100px;
+ #content-block-1{
+    scroll-margin-top: 150px;
   }
 
   #content-block-2{
-        scroll-margin-top: 100px;
+        scroll-margin-top: 40px;
 
   }
-  */
+
+  #content-block-3{
+    scroll-margin-top: 50px;
+  }
+  
   .portfolio-section{
     margin-bottom: 0;
   }
@@ -230,14 +234,21 @@
 
   #content-block-1{
     height: 300px;
+    scroll-margin-top: 200px;
+  }
+
+  .about-me-txt{
+    font-size: 2rem;
   }
 
   #content-block-2{
     height: 450px;
+    scroll-margin-top: 160px;
   }
 
   #content-block-3{
     height: 400px;
+    scroll-margin-top: 190px;
   }
 
   .feature-p{

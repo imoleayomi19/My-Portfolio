@@ -131,7 +131,7 @@ export default function Home() {
               </div>
             </div>
           </section>
-
+ 
           {/* Navigation Content Blocks */}
           <div
             style={{
@@ -148,8 +148,7 @@ export default function Home() {
                 margin: "2rem 0",
                 padding: "2rem",
                 borderRadius: "15px",
-                // border: "3px solid #007bff",
-                scrollMarginTop: "200px",
+                // scrollMarginTop: "200px",
                 color: "white",
                 alignItems: "center",
                 boxShadow: "0 8px 32px rgba(0, 0, 0, 0.3)",
@@ -157,9 +156,10 @@ export default function Home() {
               }}
             >
               <h2
+                className="about-me-txt"
                 style={{
                   color: "white",
-                  fontSize: "2rem",
+                  // fontSize: "2rem",
                   fontFamily: "fantasy",
                 }}
               >
@@ -191,7 +191,7 @@ export default function Home() {
                 marginBottom: "2rem",
                 padding: "2rem",
                 borderRadius: "15px",
-                scrollMarginTop: "160px",
+                // scrollMarginTop: "160px",
                 color: "white",
               }}
             >
@@ -217,6 +217,7 @@ export default function Home() {
                   style={{
                     padding: "2rem",
                     borderRadius: "10px",
+                    border: "3px solid #007bff",
                   }}
                 >
                   <h2 style={{ marginBottom: "0.8rem" }}>
@@ -232,6 +233,7 @@ export default function Home() {
                   style={{
                     padding: "2rem",
                     borderRadius: "10px",
+                    border: "3px solid #007bff",
                   }}
                 >
                   <h2 style={{ marginBottom: "0.8rem" }}>Design</h2>
@@ -251,7 +253,7 @@ export default function Home() {
                 margin: "2rem auto",
                 padding: "2rem",
                 borderRadius: "15px",
-                scrollMarginTop: "190px",
+                // scrollMarginTop: "190px",
                 color: "white",
                 display: "flex",
                 flexDirection: "column",
