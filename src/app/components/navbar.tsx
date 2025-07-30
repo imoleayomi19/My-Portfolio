@@ -153,6 +153,20 @@ export default function Navbar() {
                 />
                 <span>Gmail</span>
               </a>
+              <a
+                href="https://wa.me/2348162121639?text=hello%20imoleayo"
+                target="_blank"
+                rel="noopener  noreferrer"
+                className="social-link"
+              >
+                <img
+                  src="/whatsapp.svg"
+                  alt="Whatsapp"
+                  width={24}
+                  height={24}
+                />
+                <span>Whatsapp</span>
+              </a>
             </div>
           )}
         </div>

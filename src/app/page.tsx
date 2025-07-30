@@ -133,12 +133,13 @@ export default function Home() {
           </section>
 
           {/* Navigation Content Blocks */}
-          <div style={{
-            marginTop: "5rem",
-
-          }}>
+          <div
+            style={{
+              marginTop: "5rem",
+            }}
+          >
             {/* About Section - Content Block 1 */}
-        
+
             <div
               id="content-block-1"
               className="content-block about-section"
@@ -153,18 +154,17 @@ export default function Home() {
                 alignItems: "center",
                 boxShadow: "0 8px 32px rgba(0, 0, 0, 0.3)",
                 gap: "20px",
-              
               }}
             >
-                  <h2
-              style={{
-                color: "white",
-                fontSize: "2rem",
-                fontFamily: "fantasy",
-              }}
-            >
-              🙋‍♂️&nbsp;About<span style={{ color: "yellow" }}>&nbsp;Me</span>
-            </h2>
+              <h2
+                style={{
+                  color: "white",
+                  fontSize: "2rem",
+                  fontFamily: "fantasy",
+                }}
+              >
+                🙋‍♂️&nbsp;About<span style={{ color: "yellow" }}>&nbsp;Me</span>
+              </h2>
               <p
                 style={{
                   fontSize: "1.1rem",
@@ -203,7 +203,7 @@ export default function Home() {
                   fontFamily: "cursive",
                 }}
               >
-              👨‍💻My <span style={{ color: "yellow" }}>Skills</span>
+                👨‍💻My <span style={{ color: "yellow" }}>Skills</span>
               </h2>
               <div
                 style={{
@@ -269,7 +269,7 @@ export default function Home() {
                   fontFamily: "monospace",
                 }}
               >
-                ✨ Featured <span  style={{ color: "yellow" }} >Projects</span>
+                ✨ Featured <span style={{ color: "yellow" }}>Projects</span>
               </h2>
               <div
                 className="feature-p"
@@ -295,10 +295,11 @@ export default function Home() {
                 </button>
                 <div
                   key={currentProject.id} // Key ensures re-render for animation
-                  className={`portfolio-item ${currentProject.id === portfolioProjects[0].id
+                  className={`portfolio-item ${
+                    currentProject.id === portfolioProjects[0].id
                       ? "active-portfolio-item"
                       : ""
-                    } ${currentPortfolioAnimation}`}
+                  } ${currentPortfolioAnimation}`}
                   style={{
                     background: "rgba(255, 255, 255, 0.15)",
                     padding: "1.5rem",
@@ -395,7 +396,13 @@ export default function Home() {
                     <strong>📍</strong> Lagos, Nigeria.
                   </div>
                 </div>
-                <div>
+                <div
+                  style={{
+                    display: "flex",
+                    justifyContent: "center",
+                    gap: "5px",
+                  }}
+                >
                   <a
                     href="https://x.com/EmmanuelE81101"
                     target="_blank"
@@ -440,6 +447,18 @@ export default function Home() {
                     <img
                       src="/icons8-gmail.svg"
                       alt="Email"
+                      width={24}
+                      height={24}
+                    />
+                  </a>
+                  <a
+                    href="https://wa.me/2348162121639?text=hello%20imoleayo"
+                    target="_blank"
+                    rel="noopener  noreferrer"
+                  >
+                    <img
+                      src="/whatsapp.svg"
+                      alt="Whatsapp"
                       width={24}
                       height={24}
                     />
